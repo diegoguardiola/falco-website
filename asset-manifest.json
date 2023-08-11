@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/falco-website/static/css/main.790622d7.css",
+    "main.js": "/falco-website/static/js/main.ea4eaa2e.js",
+    "static/js/787.956f1f9e.chunk.js": "/falco-website/static/js/787.956f1f9e.chunk.js",
+    "static/media/img4.jpg": "/falco-website/static/media/img4.b051ac8b8f36dd78dc71.jpg",
+    "static/media/img1.jpg": "/falco-website/static/media/img1.ee4190dfff3773b4659f.jpg",
+    "static/media/img2.jpg": "/falco-website/static/media/img2.1b16e5d36fa605ea4719.jpg",
+    "static/media/img3.jpg": "/falco-website/static/media/img3.0053a48867aa5be646b7.jpg",
+    "static/media/section3image.png": "/falco-website/static/media/section3image.6db571a9953dd5f0f821.png",
+    "static/media/industrialRobotics.jpg": "/falco-website/static/media/industrialRobotics.afdf8bc80dbd49d4ec47.jpg",
+    "static/media/pharmaManufacturing.jpg": "/falco-website/static/media/pharmaManufacturing.767bb5d276e84967dd50.jpg",
+    "static/media/partManufacturing.jpg": "/falco-website/static/media/partManufacturing.e455e673b53a62fba6cf.jpg",
+    "static/media/IndustrialAutomation.jpg": "/falco-website/static/media/IndustrialAutomation.71d3db20b3af5d5a83d8.jpg",
+    "static/media/scada.jpg": "/falco-website/static/media/scada.d14bb03d6b905c4c6293.jpg",
+    "static/media/buildingAutoamtion2.jpg": "/falco-website/static/media/buildingAutoamtion2.e5e06344f878ff918558.jpg",
+    "static/media/metal-grinding.jpg": "/falco-website/static/media/metal-grinding.1d96ad09d67cd68f3f7a.jpg",
+    "static/media/customer1.jpg": "/falco-website/static/media/customer1.a642ac2a6ee43697397b.jpg",
+    "static/media/splah.jpg": "/falco-website/static/media/splah.65d26076967426388f47.jpg",
+    "static/media/logo.png": "/falco-website/static/media/logo.0f158b9f6a1ac74b8cf7.png",
+    "static/media/system_integration.jpg": "/falco-website/static/media/system_integration.382c595bf40397e211c7.jpg",
+    "static/media/packaging.jpg": "/falco-website/static/media/packaging.924a0ee449dec0168358.jpg",
+    "static/media/customer4.jpg": "/falco-website/static/media/customer4.52794a61092683bd7559.jpg",
+    "static/media/mitsubishi.png": "/falco-website/static/media/mitsubishi.21ad96cb1e426ae4bf00.png",
+    "static/media/plc1.jpg": "/falco-website/static/media/plc1.f7171d5de70659cca80b.jpg",
+    "static/media/siemens.png": "/falco-website/static/media/siemens.b58d79f11a7d87ba07b5.png",
+    "static/media/universal-robots.png": "/falco-website/static/media/universal-robots.52044b2917eed5a71830.png",
+    "static/media/ignition.png": "/falco-website/static/media/ignition.47a9a0b7bf3cd2db1fc0.png",
+    "static/media/AB.png": "/falco-website/static/media/AB.1bd164d4a293653fd279.png",
+    "index.html": "/falco-website/index.html",
+    "main.790622d7.css.map": "/falco-website/static/css/main.790622d7.css.map",
+    "main.ea4eaa2e.js.map": "/falco-website/static/js/main.ea4eaa2e.js.map",
+    "787.956f1f9e.chunk.js.map": "/falco-website/static/js/787.956f1f9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.790622d7.css",
+    "static/js/main.ea4eaa2e.js"
+  ]
+}
