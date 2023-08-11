@@ -1,0 +1,44 @@
+.home_section_3 {
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+
+
+    .home_section_3_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: 500ms;
+
+        img {
+            width: auto;
+            height: 90%; /* Adjusted to leave space for h1 and p */
+            margin-right: 35%;
+        }
+        .home_section_3_card_desc {
+            margin-left: 15%;
+            margin-bottom: 25%;
+            h1 {
+                font-size: 8vh;
+                font-weight: bold;
+            }
+            p {
+                font-size: 3vh;
+                font-weight: normal;
+                margin: 1vh 0; /* Add margins to separate elements */
+            }
+        }
+    } 
+
+    .home_section_3_card.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
