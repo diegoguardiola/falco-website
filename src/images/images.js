@@ -22,6 +22,15 @@ import mitsubishi from './affiliations/mitsubishi.png'
 import universalRobots from './affiliations/universal-robots.png'
 import ignition from './affiliations/ignition.png'
 import murr from './affiliations/murr.png'
+import buchanan from './affiliations/buchanan.png'
+//overview
+import buildingAutomation from './overview/building_automation.jpg'
+import completeAutomation from './overview/complete_automation.jpg'
+import packagingAutomation from './overview/packaging autoamtion.jpg'
+import partManufacturing from './overview/part_manufacturing.jpg'
+import pharma from './overview/pharma1.jpg'
+import robotics from './overview/robotic_hand.jpg'
+import scada from './overview/scada.jpg'
 
 export default {
     logo,
@@ -46,4 +55,13 @@ export default {
     universalRobots,
     ignition,
     murr,
+    buchanan,
+
+    buildingAutomation,
+    completeAutomation,
+    packagingAutomation,
+    partManufacturing,
+    pharma,
+    robotics,
+    scada
 }

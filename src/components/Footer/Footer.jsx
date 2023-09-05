@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import { images } from '../../images'
 import { 
@@ -12,6 +11,12 @@ function Footer() {
     const scrollToTop = () => {
         window.scrollTo(0, 0); // Scrolls to the top of the page
     };
+
+    const openGoogleMapsDirections = () => {
+        const destinationAddress = encodeURIComponent('2689 Citrus Rd Suite D, Rancho Cordova, CA 95742');
+        const googleMapsURL = `https://www.google.com/maps/dir/?api=1&destination=${destinationAddress}`;
+        window.open(googleMapsURL, '_blank');
+      };
 
   return (
     <div className='information_container'>
@@ -60,10 +65,10 @@ function Footer() {
             <p className='menu_item'>
                 <BsFillTelephoneFill /> +1 (916) 477-1742
             </p>
-            <p className='menu_item'>
+            <a href="mailto:sales@falcoautomation.com" className="menu-item">
                 <BsEnvelopeFill /> sales@falcoautomation.com
-            </p>
-            <p className='menu_item'>
+            </a>
+            <p className='menu_item' onClick={openGoogleMapsDirections}>
                 <BsMapFill /> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
             </p>
         </div>

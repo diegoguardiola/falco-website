@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react'; // Import useEffect
 import { images } from '../../images';
 import './Section3.scss';
 
 function Section3() {
-
-    const cards = document.querySelectorAll(".home_section_3_card")
+  useEffect(() => { // Use the useEffect hook to observe elements when they're ready
+    const cards = document.querySelectorAll(".home_section_3_card");
 
     const observer = new IntersectionObserver(entries => {
-        entries.forEach( entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting)
-        })
+      entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+      });
     }, {
-        threshold: .5
-    })
+      threshold: .6
+    });
 
     cards.forEach(card => {
-        observer.observe(card)  
-    })
-    
+      observer.observe(card);
+    });
+
+    // Optional: unobserve the elements when the component is unmounted
+    return () => {
+      cards.forEach(card => {
+        observer.unobserve(card);
+      });
+    };
+  }, []); // An empty dependency array means this effect will run once, like componentDidMount in class components
 
   return (
     <div className='home_section_3'>
@@ -33,7 +40,7 @@ function Section3() {
             </div>
         </div>
         <div className='home_section_3_card'>
-            <img  src={images.section3image} alt="section" />
+            <img src={images.section3image} alt="section" />
         </div>
     </div>
   );

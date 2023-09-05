@@ -16,7 +16,7 @@ const NavBar = () => {
       <ul className='app__navbar-links'>
         <li className='app__flex p-text'>
           <div>
-            <Link className='link-style' to="/" onClick={scrollToTop}>Home</Link>
+            <Link className='link-style' to="/falco-website" onClick={scrollToTop}>Home</Link>
           </div>
         </li>
         <li className='app__flex p-text'>
@@ -24,6 +24,15 @@ const NavBar = () => {
             <Link className='link-style' to="/services/welcome">Services</Link>
           </div>
         </li>
+        {/*<li className='app__flex p-text dropdown'>
+          <div>
+            <Link className='link-style' >Resources</Link>
+            <div className='dropdown-content'>
+              <Link className='link-style' to="/resources/training">Training</Link>
+              <Link className='link-style' to="/resources/casestudies">Case Studies</Link>
+            </div>
+          </div>
+        </li>*/}
         <li className='app__flex p-text'>
           <div>
             <Link className='link-style' to="/contact">Contact</Link>

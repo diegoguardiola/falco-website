@@ -1,11 +1,17 @@
 .home_section_3 {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     flex-direction: row;
     background-color: #F5F5F5;
     justify-content: center;
     align-items: center;
-
+    @media (max-width: 768px) {
+        /* Media query for mobile devices */
+        flex-direction: column;
+    }
+    @media (min-width: 601px) and (max-width: 1024px) { // Tablets
+        flex-direction: column;
+    }
 
     .home_section_3_card {
         display: flex;
@@ -16,11 +22,25 @@
         transform: translateX(100px);
         opacity: 0;
         transition: 500ms;
+        @media (max-width: 768px) {
+            /* Media query for mobile devices */
+            width: 100%;
+            height: auto;           }
+        @media (min-width: 601px) and (max-width: 1024px) { // Tablets
+            
+        }
 
         img {
             width: auto;
             height: 90%; /* Adjusted to leave space for h1 and p */
             margin-right: 35%;
+            @media (max-width: 768px) {
+                /* Media query for mobile devices */
+                width: 100%;
+                height: auto;           }
+            @media (min-width: 601px) and (max-width: 1024px) { // Tablets
+                
+            }
         }
         .home_section_3_card_desc {
             margin-left: 15%;
@@ -28,11 +48,23 @@
             h1 {
                 font-size: 8vh;
                 font-weight: bold;
+                @media (max-width: 768px) {
+                    /* Media query for mobile devices */
+                    font-size: 1.5rem;           }
+                @media (min-width: 601px) and (max-width: 1024px) { // Tablets
+                    
+                }
             }
             p {
                 font-size: 3vh;
                 font-weight: normal;
                 margin: 1vh 0; /* Add margins to separate elements */
+                @media (max-width: 768px) {
+                    /* Media query for mobile devices */
+                    font-size: 0.9rem;           }
+                @media (min-width: 601px) and (max-width: 1024px) { // Tablets
+                    
+                }
             }
         }
     } 

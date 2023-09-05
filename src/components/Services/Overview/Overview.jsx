@@ -7,6 +7,8 @@ import {PiGearBold} from 'react-icons/pi'
 import {FiMonitor} from 'react-icons/fi'
 import {BsFillBuildingsFill} from 'react-icons/bs'
 
+import { images } from '../../../images';
+
 import industrialAutomation from '../../../images/services/IndustrialAutomation.jpg'
 import pharmaAutomation from '../../../images/services/pharmaManufacturing.jpg'
 import packaging from '../../../images/services/packaging.jpg'
@@ -14,7 +16,7 @@ import partManufacturing from '../../../images/services/partManufacturing.jpg'
 import scada from '../../../images/services/scada.jpg'
 import buildingAutomation from '../../../images/services/buildingAutoamtion2.jpg'
 
-const images = [industrialAutomation, pharmaAutomation, packaging, partManufacturing, scada, buildingAutomation ];
+const imgs = [industrialAutomation, pharmaAutomation, packaging, partManufacturing, scada, buildingAutomation ];
 
 
 function Overview() {
@@ -34,7 +36,7 @@ function Overview() {
         <div className='service_overview_card_row'>
             <div
             className={`service_overview_card ${expandedCard === 1 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[0]})` }}
+            style={{ backgroundImage: `url(${imgs[0]})` }}
             onClick={() => toggleCard(1)}
             >
                 <MdOutlinePrecisionManufacturing className='services_icon'/>
@@ -42,7 +44,7 @@ function Overview() {
             </div>
             <div
             className={`service_overview_card ${expandedCard === 2 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[1]})` }}
+            style={{ backgroundImage: `url(${imgs[1]})` }}
             onClick={() => toggleCard(2)}
             >
                 <GiMedicines className='services_icon'/>
@@ -66,6 +68,7 @@ function Overview() {
                 your automation needs from R&D, design and build, programming, troubleshooting,
                 or a combination of these. 
             </p>
+            <img src={images.completeAutomation} />
             <p>
                 Dedicated to fulfilling your integration demands, Falco offers top-notch
                 and cutting-edge solutions in design, controls software, laser, and 
@@ -96,6 +99,7 @@ function Overview() {
                     productivity at any given time.
                 </li>
             </ul>
+            <img src={images.pharma} />
             <h3>On-Site Calibration</h3>
             <p>
                 Falco’s on-site calibration service is an effective means to minimize downtime. We deploy 
@@ -121,7 +125,7 @@ function Overview() {
         <div className='service_overview_card_row'>
             <div
             className={`service_overview_card ${expandedCard === 3 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[2]})` }}
+            style={{ backgroundImage: `url(${imgs[2]})` }}
             onClick={() => toggleCard(3)}
             >
                 <LuPackageOpen className='services_icon'/>
@@ -129,7 +133,7 @@ function Overview() {
             </div>
             <div
             className={`service_overview_card ${expandedCard === 2 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[3]})` }}
+            style={{ backgroundImage: `url(${imgs[3]})` }}
             onClick={() => toggleCard(4)}
             >
                 <PiGearBold className='services_icon' />
@@ -152,6 +156,7 @@ function Overview() {
             maintain product integrity and prevent contamination, while meeting high production demands.
             </p>
             <h3>Packaging</h3>
+            <img src={images.packagingAutomation} />
             <p>
             Our packaging capabilities encompass a wide range of technologies, including automated filling, sealing, 
             labeling, and cartoning. We understand the significance of packaging in both product protection and consumer 
@@ -169,6 +174,7 @@ function Overview() {
                 of fully trained professionals who specialize in laser cutting, custom sheet metal fabrication, and welding. 
                 Falco will be with you from prototype to full production using the latest technology at Falco HQ.
             </p>
+            <img src={images.partManufacturing} />
             <h3>Services We Offer:</h3>
             <ul>
                 <li>CNC milling</li>
@@ -182,7 +188,7 @@ function Overview() {
         <div className='service_overview_card_row'>
             <div
             className={`service_overview_card ${expandedCard === 2 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[4]})` }}
+            style={{ backgroundImage: `url(${imgs[4]})` }}
             onClick={() => toggleCard(5)}
             >
                 <FiMonitor className='services_icon' />
@@ -190,7 +196,7 @@ function Overview() {
             </div>
             <div
             className={`service_overview_card ${expandedCard === 2 ? 'expanded' : ''}`}
-            style={{ backgroundImage: `url(${images[5]})` }}
+            style={{ backgroundImage: `url(${imgs[5]})` }}
             onClick={() => toggleCard(6)}
             >
                 <BsFillBuildingsFill className='services_icon' />
@@ -206,6 +212,7 @@ function Overview() {
                 identify and deploy the most optimal SCADA architecture for your automated industrial 
                 processes.
             </p>
+            <img src={images.scada} />
             <h3>Falco's SCADA Solutions Have the Following Capabilities</h3>
             <ul>
                 <li>Integration of different protocols/controls and different manufacturers</li>
@@ -227,6 +234,7 @@ function Overview() {
                 Building automation is heavily reliant on software and warehouse equipment which use data 
                 and machine learning to achieve the following:
             </p>
+            <img src={images.buildingAutomation} />
             <ul>
                 <li>
                     Increased efficiency and maximized production – using automated systems in your facility allows you 

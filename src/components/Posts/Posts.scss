@@ -1,0 +1,15 @@
+
+.articles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 300px;
+
+    .article-container {
+        width: 400px;
+        img{
+            width: 400px;
+        }
+    }
+}

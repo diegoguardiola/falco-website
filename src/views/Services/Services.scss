@@ -1,0 +1,21 @@
+
+
+.section_1 {
+  display: flex; /* Add this line to enable flex layout */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  height: 100vh; /* Set the height of the wrapper to 100% viewport height */
+  flex-direction: column;
+  @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  h1 {
+      font-size: 55px;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+    }
+}
+
