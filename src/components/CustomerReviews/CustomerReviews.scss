@@ -3,6 +3,9 @@
   height: 60%;
   overflow: hidden;
   position: relative;
+  @media (max-width: 768px) { // Mobile devices
+    height: 40vh
+  }
 }
 
 .review-card-container {
@@ -10,6 +13,9 @@
   animation: slide 15s linear infinite;
   width: 20vw;
   height: 75%;
+  @media (max-width: 768px) { // Mobile devices
+    height: auto;
+  }
 }
 
 .review-card {
@@ -20,6 +26,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 768px) { // Mobile devices
+    width: 30vw;
+  }
 }
 
 .image-container {
@@ -30,6 +39,10 @@
   img {
     max-height: 100%;
     width: auto;
+    @media (max-width: 768px) { // Mobile devices
+      max-height: 15vh;
+      width: auto;
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.scss'
 import CaroselAffiliations from '../../components/CaroselAffiliations/CaroselAffiliations';
 import CustomerReviews from '../../components/CustomerReviews/CustomerReviews';
@@ -11,11 +11,30 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 
 function Home() {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className='home_container'>
 
-      <Parallax pages={2.9} scrolling={true} vertical >
-        <ParallaxLayer offset={0} speed={1.0} factor={1.0}>
+      <Parallax pages={screenWidth < 768 ? 3.0 : 2.9} scrolling={true}  >
+        <ParallaxLayer
+          offset={0} 
+          speed={1.0}
+          factor={screenWidth < 768 ? 1.0 : 1.0}
+        >
           <div className='section_1'>
             <div className='header_text'>
               <h1>Automation Soultions</h1>
@@ -26,21 +45,21 @@ function Home() {
           <Section3 />
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1.35}
-          speed={1.0}
-          factor={1.55}
+          offset={screenWidth < 768 ? 1.0 : 1.35}
+          speed={screenWidth < 768 ? 1.0 : 1.0}
+          factor={screenWidth < 768 ? 1.0 : 1.55}
           style={{
             backgroundImage: `url(${images.img4})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            backgroundPositionX: '25%',
           }}
         >
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1.6}
+          offset={screenWidth < 768 ? 1.0 : 1.6}
           speed={2.2}
         >
         <div className='home_img_container'>
-            
             <div className="text-overlay">
               <div className='text-overlay-description'>
                 <h2>Engineering Design</h2>
@@ -78,18 +97,14 @@ function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={2.0}
-          speed={1.0}
+          offset={screenWidth < 768 ? 1.9 : 2.0}
+          speed={screenWidth < 768 ? 1.0 : 1.0}
         >
           <CustomerReviews />
-        </ParallaxLayer>
-        <ParallaxLayer
-          offset={2.5}
-          speed={1.0}
-        >
           <Footer />
         </ParallaxLayer>
       </Parallax>
+      
     </div>
   );
 }

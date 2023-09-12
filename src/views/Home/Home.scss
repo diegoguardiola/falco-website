@@ -20,7 +20,7 @@
     @media (max-width: 768px) {
       /* Media query for mobile devices */
       background-size: contain; /* Use "contain" for smaller screens */
-      height: 70vh;
+      height: 100vh;
       background-position: center 70%;
     }
     @media (min-width: 601px) and (max-width: 1024px) { // Tablets
@@ -45,7 +45,7 @@
         font-weight: bold;
         opacity: 0;
         animation: fadeIn 3s ease forwards;
-        @media (max-width: 600px) { // Mobile devices
+        @media (max-width: 768px) { // Mobile devices
           font-size: 2.5vh;
         }
         @media (min-width: 601px) and (max-width: 1024px) { // Tablets
@@ -58,7 +58,7 @@
         font-weight: normal;
         opacity: 0;
         animation: fadeIn 6s ease forwards;
-        @media (max-width: 600px) { // Mobile devices
+        @media (max-width: 768px) { // Mobile devices
           font-size: 2.5vh;
         }
 
@@ -78,16 +78,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  
-    img {
-      display: flex;
-      height: 100%;
-      width: auto;
-      z-index: -2; /* Bring the image forward */
-      transform: translate(0%, 15%);
-      
+    @media (max-width: 768px) { // Mobile devices
+      height: 100vh;
     }
+  
   
     .text-overlay {
       display: flex;
@@ -100,13 +94,23 @@
       padding: 10px;
       color: white;
       z-index: -1; /* Bring the text overlay forward */
+      @media (max-width: 768px) { // Mobile devices
+        flex-direction: column;
+      }
       .text-overlay-description{
         padding: 15px;
         h2{
           font-size: 54px;
+          @media (max-width: 768px) { // Mobile devices
+            font-size: 1rem;
+          }
         }
+        
         p{
           font-size: 30px;
+          @media (max-width: 768px) { // Mobile devices
+            font-size: 1rem;
+          }
         }
       }
     }
