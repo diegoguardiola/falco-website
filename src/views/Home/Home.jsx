@@ -97,7 +97,7 @@ function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={screenWidth < 768 ? 1.9 : 2.0}
+          offset={screenWidth < 768 ? 2.0 : 2.0}
           speed={screenWidth < 768 ? 1.0 : 1.0}
         >
           <CustomerReviews />

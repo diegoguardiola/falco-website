@@ -48,18 +48,20 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className='row_2'>
-            <Link className='link-style' to="/services/welcome" onClick={scrollToTop}>Services</Link>
-            <Link className='link-style' to="/contact" onClick={scrollToTop}>Contact</Link>
-            <p className='menu_item'>Case Studies</p>
-            <p className='menu_item'>News & Events</p>
-            <p className='menu_item'>Falco Training</p>
-        </div>
-        <div className='row_3'>
-            <p className='menu_item'>Security</p>
-            <p className='menu_item'>Privacy Policy</p>
-            <p className='menu_item'>Terms and Conditions</p>
-            <p className='menu_item'>FAQ</p>
+        <div className='phone_row'>
+            <div className='row_2'>
+                <Link className='link-style' to="/services/welcome" onClick={scrollToTop}>Services</Link>
+                <Link className='link-style' to="/contact" onClick={scrollToTop}>Contact</Link>
+                <p className='menu_item'>Case Studies</p>
+                <p className='menu_item'>News & Events</p>
+                <p className='menu_item'>Falco Training</p>
+            </div>
+            <div className='row_3'>
+                <p className='menu_item'>Security</p>
+                <p className='menu_item'>Privacy Policy</p>
+                <p className='menu_item'>Terms and Conditions</p>
+                <p className='menu_item'>FAQ</p>
+            </div>
         </div>
         <div className='row_4'>
             <p className='menu_item'>
