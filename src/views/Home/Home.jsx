@@ -29,7 +29,7 @@ function Home() {
   return (
     <div className='home_container'>
 
-      <Parallax pages={screenWidth < 768 ? 3.0 : 2.9} scrolling={true}  >
+      <Parallax pages={screenWidth < 768 ? 3.0 : 2.98} scrolling={true}  >
         <ParallaxLayer
           offset={0} 
           speed={1.0}
@@ -45,7 +45,7 @@ function Home() {
           <Section3 />
         </ParallaxLayer>
         <ParallaxLayer
-          offset={screenWidth < 768 ? 1.0 : 1.35}
+          offset={screenWidth < 768 ? 1.0 : 1.28}
           speed={screenWidth < 768 ? 1.0 : 1.0}
           factor={screenWidth < 768 ? 1.0 : 1.55}
           style={{
