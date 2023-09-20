@@ -5,6 +5,8 @@ import Home from './views/Home/Home';
 import Services from './views/Services/Services';
 import Contact from './views/Contact/Contact';
 import CaseStudies from './views/CaseStudies/CaseStudies';
+import FoodandBev from './views/Food&Bev/FoodandBev';
+import Aerospace from './views/Aerospace/Aerospace';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/services/:sectionId" element={<Services />} />
           <Route path="/resources/casestudies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/foodandbeverage" element={<FoodandBev />} />
+          <Route path="/aerospace" element={<Aerospace />} />
         </Routes>
       </div>
     </Router>

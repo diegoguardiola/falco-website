@@ -31,6 +31,9 @@ import partManufacturing from './overview/part_manufacturing.jpg'
 import pharma from './overview/pharma1.jpg'
 import robotics from './overview/robotic_hand.jpg'
 import scada from './overview/scada.jpg'
+//industries
+import foodandbev1 from './industries/food-processing-automation.jpg'
+import aerospaceBody from './industries/aerospace-body.jpg'
 
 export default {
     logo,
@@ -63,5 +66,8 @@ export default {
     partManufacturing,
     pharma,
     robotics,
-    scada
+    scada,
+
+    foodandbev1,
+    aerospaceBody
 }
