@@ -10,11 +10,11 @@ import {BsFillBuildingsFill} from 'react-icons/bs'
 import { images } from '../../../images';
 
 import industrialAutomation from '../../../images/services/IndustrialAutomation.jpg'
-import pharmaAutomation from '../../../images/services/pharmaManufacturing.jpg'
-import packaging from '../../../images/services/packaging.jpg'
-import partManufacturing from '../../../images/services/partManufacturing.jpg'
-import scada from '../../../images/services/scada.jpg'
-import buildingAutomation from '../../../images/services/buildingAutoamtion2.jpg'
+import pharmaAutomation from '../../../images/industries/pharmaManufacturing.jpg'
+import packaging from '../../../images/industries/packaging.jpg'
+import partManufacturing from '../../../images/capabilities/partManufacturing.jpg'
+import scada from '../../../images/capabilities/scada.jpg'
+import buildingAutomation from '../../../images/capabilities/buildingAutoamtion2.jpg'
 
 const imgs = [industrialAutomation, pharmaAutomation, packaging, partManufacturing, scada, buildingAutomation ];
 

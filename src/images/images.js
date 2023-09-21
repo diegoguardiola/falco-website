@@ -25,15 +25,24 @@ import murr from './affiliations/murr.png'
 import buchanan from './affiliations/buchanan.png'
 //overview
 import buildingAutomation from './overview/building_automation.jpg'
-import completeAutomation from './overview/complete_automation.jpg'
 import packagingAutomation from './overview/packaging autoamtion.jpg'
-import partManufacturing from './overview/part_manufacturing.jpg'
 import pharma from './overview/pharma1.jpg'
 import robotics from './overview/robotic_hand.jpg'
 import scada from './overview/scada.jpg'
 //industries
 import foodandbev1 from './industries/food-processing-automation.jpg'
 import aerospaceBody from './industries/aerospace-body.jpg'
+import pharmaBody from './industries/pharmaManufacturing.jpg'
+import industrialBody from './industries/Industrial-automation-main.jpg'
+import partManufacturingBody from './industries/part_manufacturing.jpg'
+import packagingBody from './industries/packaging.jpg'
+//capabilities
+import manufacturingBody from './capabilities/partManufacturing.jpg'
+import buildingAutomationBody from './capabilities/buildingAutoamtion2.jpg'
+import scadaBody from './capabilities/scada.jpg'
+import systemIntegrationBody from './capabilities/complete_automation.jpg'
+import calibrationBody from './capabilities/calibration.jpg'
+import mechDesignBody from './capabilities/mechanical-design.jpg'
 
 export default {
     logo,
@@ -61,13 +70,22 @@ export default {
     buchanan,
 
     buildingAutomation,
-    completeAutomation,
     packagingAutomation,
-    partManufacturing,
     pharma,
     robotics,
     scada,
 
     foodandbev1,
-    aerospaceBody
+    aerospaceBody,
+    pharmaBody,
+    industrialBody,
+    partManufacturingBody,
+    packagingBody,
+
+    manufacturingBody,
+    buildingAutomationBody,
+    scadaBody,
+    systemIntegrationBody,
+    calibrationBody,
+    mechDesignBody
 }

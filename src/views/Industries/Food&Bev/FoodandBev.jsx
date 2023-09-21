@@ -1,7 +1,7 @@
 import React from 'react'
 import './FoodandBev.scss'
-import SideNavbar from '../../components/sideNavbarIndustries/SideNavbar'
-import { images } from '../../images'
+import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import { images } from '../../../images'
 
 
 function FoodandBev() {

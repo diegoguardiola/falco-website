@@ -10,6 +10,7 @@ const SideNavbar = () => {
         <li><a href="/pharmamanufacturing">Pharmaceutical Manufacturing</a></li>
         <li><a href="/industrialautomation">Industrial Automation</a></li>
         <li><a href="/partmanufacturing">Part Manufacturing</a></li>
+        <li><a href="/packaging">Packaging</a></li>
       </ul>
     </div>
   );

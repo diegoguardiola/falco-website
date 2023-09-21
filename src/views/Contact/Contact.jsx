@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.scss'
-import MapLocation from '../../components/map';
 import Footer from '../../components/Footer/Footer'
 
 function Contact() {
@@ -100,7 +99,6 @@ function Contact() {
             </div>
           )}
           <div className="app__footer-map">
-            <MapLocation />
           </div>
     </div>
     <Footer />

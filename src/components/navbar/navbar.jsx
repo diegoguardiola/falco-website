@@ -17,7 +17,8 @@ const Navbar = () => {
           { name: "Food & Beverage", path: "/foodandbeverage" },
           { name: "Pharmaceutical Manufacturing", path: "/pharmamanufacturing" },
           { name: "Industrial Automation", path: "/industrialautomation" },
-          { name: "Part Manufacturing", path: "/partmanufacturing" }
+          { name: "Part Manufacturing", path: "/partmanufacturing" },
+          { name: "Packaging", path: "/packaging" },
       ]
     },
     { 
@@ -30,10 +31,18 @@ const Navbar = () => {
         { name: "System Integration", path: "/systemintegration" },
         { name: "Calibration", path: "/calibration" },
         { name: "Mechanical Design", path: "/mechdesign" }
-    ]
+      ]
   },
     { name: "About", path: "/about" },
-    { name: "Support", path: "/support" },
+    { 
+      name: "Support", 
+      path: "/support",
+      subMenu: [
+        { name: "Remote Technical Support", path: "/remotesupport" },
+        { name: "Field Services", path: "/fieldservice" },
+        { name: "System Upgrades", path: "/upgrades" },
+      ]
+    },
     { name: "Contact", path: "/contact" },
 ];
 
