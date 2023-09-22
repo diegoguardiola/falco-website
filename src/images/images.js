@@ -8,12 +8,15 @@ import customer1 from './customer1.jpg'
 import customer2 from './customer2.jpg'
 import customer3 from './customer3.jpg'
 import customer4 from './customer4.jpg'
-import plc1 from './plc1.jpg'
 import system_integration from './system_integration.jpg'
 import industrialRobotics from './industrialRobotics.jpg'
 import machining1 from './metal-grinding.jpg'
 import splash from './splah.jpg'
 import section3image from './section3image.png'
+
+//main pages
+import aboutUsHeader from './about us.jpg'
+import aboutUsMap from './falco-map.png'
 
 //Affiliations
 import siemens from './affiliations/siemens.png'
@@ -43,6 +46,10 @@ import scadaBody from './capabilities/scada.jpg'
 import systemIntegrationBody from './capabilities/complete_automation.jpg'
 import calibrationBody from './capabilities/calibration.jpg'
 import mechDesignBody from './capabilities/mechanical-design.jpg'
+//support
+import remoteSupportBody from './support/remote-support.jpg'
+import fieldServicesBody1 from './support/field service engineers.webp'
+import upgradeBody1 from './support/plc1.jpg'
 
 export default {
     logo,
@@ -54,12 +61,14 @@ export default {
     customer2,
     customer3,
     customer4,
-    plc1,
     system_integration,
     industrialRobotics,
     machining1,
     splash,
     section3image,
+
+    aboutUsHeader,
+    aboutUsMap,
 
     siemens,
     AB,
@@ -87,5 +96,10 @@ export default {
     scadaBody,
     systemIntegrationBody,
     calibrationBody,
-    mechDesignBody
+    mechDesignBody,
+
+    remoteSupportBody,
+    fieldServicesBody1,
+    upgradeBody1,
+    
 }

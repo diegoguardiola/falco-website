@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar';
 import Home from './views/Home/Home';
 import Services from './views/Services/Services';
+import Industries from './views/Industries/Industries';
+import Capabilities from './views/Capabilities/Capabilities';
+import About from './views/About/About';
 import Contact from './views/Contact/Contact';
 import CaseStudies from './views/CaseStudies/CaseStudies';
 
@@ -20,7 +23,9 @@ import SystemIntegration from './views/Capabilities/SystemIntegration/SystemInte
 import Calibration from './views/Capabilities/Calibration/Calibration';
 import MechDesign from './views/Capabilities/MechDesign/MechDesign';
 
-import RemoteSupport from './views/Support/RemoteSupport';
+import RemoteSupport from './views/Support/RemoteSupport/RemoteSupport';
+import FieldServices from './views/Support/FieldServices/FieldServices';
+import Upgrades from './views/Support/Upgrades/Upgrades';
 
 function App() {
   return (
@@ -31,6 +36,9 @@ function App() {
           <Route path="/falco-website" element={<Home />} />
           <Route path="/services/:sectionId" element={<Services />} />
           <Route path="/resources/casestudies" element={<CaseStudies />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/capabilities" element={<Capabilities />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/foodandbeverage" element={<FoodandBev />} />
           <Route path="/aerospace" element={<Aerospace />} />
@@ -47,6 +55,8 @@ function App() {
           <Route path="/mechdesign" element={<MechDesign />} />
 
           <Route path="/remotesupport" element={<RemoteSupport />} />
+          <Route path="/fieldservice" element={<FieldServices />} />
+          <Route path="/upgrades" element={<Upgrades />} />
         </Routes>
       </div>
     </Router>

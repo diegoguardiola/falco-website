@@ -1,0 +1,61 @@
+body {
+    overflow-x: hidden;
+  }
+
+.remote-support-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    .remote-support-header {
+        display: flex;
+        height: 40vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        position: relative; // Important: to make sure the pseudo-element is positioned correctly
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            //background-image: url('../../images/industries/hero-food_beverage_automation-1024x734.jpg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: -1; // To ensure the background is below the content
+        }
+
+        h1 {
+            color: white;
+        }
+    }
+
+    .remote-support-body {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        
+
+        .remote-support-info {
+            display: flex;
+            margin: 3rem 8rem;
+            flex-direction: column;
+
+            img{
+                width: 60vw;
+                height: auto;
+                margin: 0rem 1.1rem;
+            }
+
+            .remote-support-info-bullet {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-header-image {
+        display: flex;
+        margin-top: 20vh;
+    }
+
+    .about-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-overview {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 85vw;
+
+        .about-overview-text {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 45vw;
+        }
+
+        .about-map {
+            display: flex;
+            align-items: center;
+            
+            .about-map-img {
+                width: 55vw;
+                height: auto;
+            }
+        }
+    }
+}

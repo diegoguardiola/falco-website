@@ -2,12 +2,12 @@ body {
     overflow-x: hidden;
   }
 
-.remote-support-container {
+.upgrades-container {
     display: flex;
     flex-direction: column;
     max-width: 100%;
 
-    .remote-support-header {
+    .upgrades-header {
         display: flex;
         height: 40vh;
         width: 100vw;
@@ -35,22 +35,23 @@ body {
         }
     }
 
-    .remote-support-body {
+    .upgrades-body {
         display: flex;
         flex-direction: row;
         width: 85vw;
         
 
-        .remote-support-info {
+        .upgrades-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
 
             img{
-                width: 60vw;
+                width: 30;
                 height: auto;
                 margin: 0rem 1.1rem;
             }
+
         }
     }
 }
