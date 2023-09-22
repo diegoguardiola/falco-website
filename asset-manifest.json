@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/falco-website/static/css/main.49dcad84.css",
-    "main.js": "/falco-website/static/js/main.dab96f95.js",
+    "main.js": "/falco-website/static/js/main.c594633f.js",
     "static/js/726.ee2a7e60.chunk.js": "/falco-website/static/js/726.ee2a7e60.chunk.js",
     "static/js/787.956f1f9e.chunk.js": "/falco-website/static/js/787.956f1f9e.chunk.js",
     "static/media/img4.jpg": "/falco-website/static/media/img4.b051ac8b8f36dd78dc71.jpg",
@@ -20,6 +20,7 @@
     "static/media/about us.jpg": "/falco-website/static/media/about us.714c60a5e2aab3ef5839.jpg",
     "static/media/packaging autoamtion.jpg": "/falco-website/static/media/packaging autoamtion.266aa0b7b2e8fe911b5c.jpg",
     "static/media/overview-mech-design.jpg": "/falco-website/static/media/overview-mech-design.1c9099ac6179989a65f4.jpg",
+    "static/media/overview-field-service.jpeg": "/falco-website/static/media/overview-field-service.9a399b142fe8e9dafaf3.jpeg",
     "static/media/aerospace-body.jpg": "/falco-website/static/media/aerospace-body.5a1db17a075d886ecc48.jpg",
     "static/media/overview-scada.png": "/falco-website/static/media/overview-scada.da8af64b5011c9fec0a3.png",
     "static/media/Aerospace-Engineering.jpg": "/falco-website/static/media/Aerospace-Engineering.13f866cf68b8a5074053.jpg",
@@ -39,6 +40,8 @@
     "static/media/FoodandBev.jpg": "/falco-website/static/media/FoodandBev.aa57b033c239f263c5c1.jpg",
     "static/media/system_integration.jpg": "/falco-website/static/media/system_integration.382c595bf40397e211c7.jpg",
     "static/media/overview-buildingAutomation.jpg": "/falco-website/static/media/overview-buildingAutomation.d062336f5b0b7c6a8ca7.jpg",
+    "static/media/overview-system-upgrades.jpg": "/falco-website/static/media/overview-system-upgrades.68a68c55f34ecce8ae51.jpg",
+    "static/media/technical_support_services.jpg": "/falco-website/static/media/technical_support_services.84ff960be52060d0fc85.jpg",
     "static/media/part_manufacturing.jpg": "/falco-website/static/media/part_manufacturing.81670c611601413d1f1c.jpg",
     "static/media/buchanan.png": "/falco-website/static/media/buchanan.0ebb66c2455e81dd6c55.png",
     "static/media/packaging.jpg": "/falco-website/static/media/packaging.924a0ee449dec0168358.jpg",
@@ -54,12 +57,12 @@
     "static/media/AB.png": "/falco-website/static/media/AB.1bd164d4a293653fd279.png",
     "index.html": "/falco-website/index.html",
     "main.49dcad84.css.map": "/falco-website/static/css/main.49dcad84.css.map",
-    "main.dab96f95.js.map": "/falco-website/static/js/main.dab96f95.js.map",
+    "main.c594633f.js.map": "/falco-website/static/js/main.c594633f.js.map",
     "726.ee2a7e60.chunk.js.map": "/falco-website/static/js/726.ee2a7e60.chunk.js.map",
     "787.956f1f9e.chunk.js.map": "/falco-website/static/js/787.956f1f9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49dcad84.css",
-    "static/js/main.dab96f95.js"
+    "static/js/main.c594633f.js"
   ]
 }
