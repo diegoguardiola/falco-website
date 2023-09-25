@@ -46,6 +46,7 @@ import scadaBody from './capabilities/scada.jpg'
 import systemIntegrationBody from './capabilities/complete_automation.jpg'
 import calibrationBody from './capabilities/calibration.jpg'
 import mechDesignBody from './capabilities/mechanical-design.jpg'
+import palletizingBody from './capabilities/palletizing-body.jpg'
 //support
 import remoteSupportBody from './support/remote-support.jpg'
 import fieldServicesBody1 from './support/field service engineers.webp'
@@ -97,6 +98,7 @@ export default {
     systemIntegrationBody,
     calibrationBody,
     mechDesignBody,
+    palletizingBody,
 
     remoteSupportBody,
     fieldServicesBody1,

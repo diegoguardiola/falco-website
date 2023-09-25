@@ -1,0 +1,111 @@
+.service_overview_card_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 12vh;
+  background-color: #eee;
+
+  .service_overview_card_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+    .service_overview_card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 3px solid rgb(0, 0, 0);
+      width: 50%;
+      height: 45vh;
+      margin: 2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+      @media (max-width: 576px) {
+        height: 30vh;
+      }
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.75); // Adjust the last value to control dimming
+        z-index: -1;
+      }
+
+      &:hover::before {
+        background: rgba(0, 0, 0, 0.5); // Brighter overlay on hover
+      }
+
+      &.expanded {
+
+        border-color: rgb(18, 126, 59);
+      }
+
+      h1 {
+        font-size: 2.4rem;
+        color: white;
+        z-index: 2;
+        text-align: center;
+        @media (max-width: 576px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .services_icon {
+        width: auto;
+        height: 10vh;
+        color: white;
+        z-index: 2;
+      }
+    }
+  }
+
+  .expanded_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: scroll;
+    background-color: #eee;
+    transition: height 0.5s ease-out;
+    align-items: center;
+    
+    img {
+      height: auto;
+      width: 60vw;
+    }
+
+    h2 {
+      font-size: 1.3rem
+    }
+    h3 {
+      padding-top: 20px;
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.1rem;
+      width: 70%;
+    }
+    ul {
+      width: 70%;
+      li {
+        font-size: 1.1rem
+      }
+    }
+    
+
+    &.show {
+      height: 500px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Home from './views/Home/Home';
 import Services from './views/Services/Services';
 import Industries from './views/Industries/Industries';
 import Capabilities from './views/Capabilities/Capabilities';
+import Support from './views/Support/Support';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
 import CaseStudies from './views/CaseStudies/CaseStudies';
@@ -22,6 +23,7 @@ import SCADA from './views/Capabilities/SCADA/SCADA';
 import SystemIntegration from './views/Capabilities/SystemIntegration/SystemIntegration';
 import Calibration from './views/Capabilities/Calibration/Calibration';
 import MechDesign from './views/Capabilities/MechDesign/MechDesign';
+import Palletizing from './views/Capabilities/Palletizing/Palletizing';
 
 import RemoteSupport from './views/Support/RemoteSupport/RemoteSupport';
 import FieldServices from './views/Support/FieldServices/FieldServices';
@@ -39,13 +41,16 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/about" element={<About />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
+
           <Route path="/foodandbeverage" element={<FoodandBev />} />
           <Route path="/aerospace" element={<Aerospace />} />
           <Route path="/pharmamanufacturing" element={<Pharma />} />
           <Route path="/industrialautomation" element={<Industrial />} />
           <Route path="/partmanufacturing" element={<PartManufacturing />} />
           <Route path="/packaging" element={<Packaging />} />
+          <Route path="/palletizing" element={<Palletizing />} />
 
           <Route path="/manufacturing" element={<Manufacturing />} />
           <Route path="/buildingautomation" element={<BuildingAutomation />} />

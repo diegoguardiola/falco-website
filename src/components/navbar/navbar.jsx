@@ -30,7 +30,8 @@ const Navbar = () => {
         { name: "SCADA", path: "/scada" },
         { name: "System Integration", path: "/systemintegration" },
         { name: "Calibration", path: "/calibration" },
-        { name: "Mechanical Design", path: "/mechdesign" }
+        { name: "Mechanical Design", path: "/mechdesign" },
+        { name: "Palletizing", path: "/palletizing" }
       ]
   },
     { name: "About", path: "/about" },
