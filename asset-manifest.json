@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/falco-website/static/css/main.1ee8fbad.css",
-    "main.js": "/falco-website/static/js/main.2fab3d58.js",
+    "main.css": "/falco-website/static/css/main.33442c11.css",
+    "main.js": "/falco-website/static/js/main.6a6a24d4.js",
     "static/js/726.ee2a7e60.chunk.js": "/falco-website/static/js/726.ee2a7e60.chunk.js",
     "static/js/787.956f1f9e.chunk.js": "/falco-website/static/js/787.956f1f9e.chunk.js",
     "static/media/img4.jpg": "/falco-website/static/media/img4.b051ac8b8f36dd78dc71.jpg",
@@ -79,13 +79,13 @@
     "static/media/ignition.png": "/falco-website/static/media/ignition.47a9a0b7bf3cd2db1fc0.png",
     "static/media/AB.png": "/falco-website/static/media/AB.1bd164d4a293653fd279.png",
     "index.html": "/falco-website/index.html",
-    "main.1ee8fbad.css.map": "/falco-website/static/css/main.1ee8fbad.css.map",
-    "main.2fab3d58.js.map": "/falco-website/static/js/main.2fab3d58.js.map",
+    "main.33442c11.css.map": "/falco-website/static/css/main.33442c11.css.map",
+    "main.6a6a24d4.js.map": "/falco-website/static/js/main.6a6a24d4.js.map",
     "726.ee2a7e60.chunk.js.map": "/falco-website/static/js/726.ee2a7e60.chunk.js.map",
     "787.956f1f9e.chunk.js.map": "/falco-website/static/js/787.956f1f9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ee8fbad.css",
-    "static/js/main.2fab3d58.js"
+    "static/css/main.33442c11.css",
+    "static/js/main.6a6a24d4.js"
   ]
 }
