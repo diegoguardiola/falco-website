@@ -1,6 +1,7 @@
 import React from 'react'
 import './PartManufacturing.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -25,59 +26,62 @@ function PartManufacturing() {
                 <h2>Our Expertise</h2>
                 <ul>
                     <li>
-                        Design Engineering: Our team of experienced engineers is ready to turn your concepts into 
+                        <span className='part-manufacturing-info-bold'>Design Engineering:</span> Our team of experienced engineers is ready to turn your concepts into 
                         reality. We excel in product design, mechanical engineering, and CAD modeling, ensuring that 
                         your ideas are transformed into functional, efficient, and aesthetically pleasing designs.
                     </li>
                     <li>
-                        Prototyping: We understand the importance of prototyping in the design process. Our rapid 
+                        <span className='part-manufacturing-info-bold'>Prototyping:</span> We understand the importance of prototyping in the design process. Our rapid 
                         prototyping capabilities allow us to bring your ideas to life quickly, helping you test and 
                         refine your concepts before moving to full-scale production.
                     </li>
                     <li>
-                        Precision Machining: Precision is the name of the game in part manufacturing. Our state-of-the-art 
+                        <span className='part-manufacturing-info-bold'>Precision Machining:</span> Precision is the name of the game in part manufacturing. Our state-of-the-art 
                         machining facilities and skilled machinists are equipped to produce high-quality parts with tight 
                         tolerances, ensuring your components perform flawlessly.
                     </li>
                     <li>
-                        CNC Machining: Our computer numerical control (CNC) machining services deliver precision and 
+                        <span className='part-manufacturing-info-bold'>CNC Machining:</span> Our computer numerical control (CNC) machining services deliver precision and 
                         consistency, whether you need one-off prototypes or large production runs.
                     </li>
                     <li>
-                        Material Expertise: We work with a wide range of materials, including metals, plastics, and 
+                        <span className='part-manufacturing-info-bold'>Material Expertise:</span> We work with a wide range of materials, including metals, plastics, and 
                         composites, to meet the specific requirements of your projects.
                     </li>
                     <li>
-                        Quality Assurance: Quality is embedded in our process from design to manufacturing. We employ 
+                        <span className='part-manufacturing-info-bold'>Quality Assurance:</span> Quality is embedded in our process from design to manufacturing. We employ 
                         rigorous quality control measures to ensure that every part we produce meets or exceeds industry 
                         standards.
                     </li>
                 </ul>
+                <img src={images.partManufacturingBody2}/>
                 <h2>Why Choose Falco Automation?</h2>
                 <ul>
                     <li>
-                        Innovation: We thrive on innovation and creativity, consistently pushing the boundaries of what's 
+                        <span className='part-manufacturing-info-bold'>Innovation:</span> We thrive on innovation and creativity, consistently pushing the boundaries of what's 
                         possible in design and manufacturing.
                     </li>
                     <li>
-                        Customization: We understand that each project is unique. Our team works closely with you to tailor our 
+                        <span className='part-manufacturing-info-bold'>Customization:</span> We understand that each project is unique. Our team works closely with you to tailor our 
                         services to your exact specifications.
                     </li>
                     <li>
-                        Quality: Our commitment to quality is unwavering. We take pride in delivering products that are reliable, 
+                        <span className='part-manufacturing-info-bold'>Quality:</span> Our commitment to quality is unwavering. We take pride in delivering products that are reliable, 
                         durable, and perform to your highest expectations.
                     </li>
                     <li>
-                        Cost-Effective Solutions: Our efficient processes and skilled workforce allow us to provide cost-effective 
+                        <span className='part-manufacturing-info-bold'>Cost-Effective Solutions:</span> Our efficient processes and skilled workforce allow us to provide cost-effective 
                         solutions without compromising on quality.
                     </li>
                     <li>
-                        Timely Delivery: We understand the importance of deadlines. Our streamlined workflows and project 
+                        <span className='part-manufacturing-info-bold'>Timely Delivery:</span> We understand the importance of deadlines. Our streamlined workflows and project 
                         management ensure that your parts are delivered on time, every time.
                     </li>
                 </ul>
+                <a href='/contact'>Contact Our Automation Experts</a>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

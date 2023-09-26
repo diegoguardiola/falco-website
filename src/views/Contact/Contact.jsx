@@ -21,15 +21,15 @@ function Contact() {
 
   emailjs
     .send(
-      "service_wxt9bvn", // Replace with your EmailJS service ID
-      "template_qfc4vp6", // Replace with your EmailJS template ID
+      "service_yax6yjw", // Replace with your EmailJS service ID
+      "template_phshk06", // Replace with your EmailJS template ID
       {
         name: formData.name,
         email: formData.email,
         subject: formData.subject,
         message: formData.message,
       },
-      "lbDzOiRcUJy7DTFn5" // Replace with your EmailJS user ID
+      "dpy_v-5yborQwQnom" // Replace with your EmailJS user ID
     )
     .then(() => {
       setLoading(false);

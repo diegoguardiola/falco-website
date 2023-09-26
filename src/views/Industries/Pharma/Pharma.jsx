@@ -1,6 +1,7 @@
 import React from 'react'
 import './Pharma.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -28,29 +29,30 @@ function Pharma() {
                 <h2>Components of Automation</h2>
                 <ul>
                     <li>
-                        Control Systems: These include programmable logic controllers (PLCs), distributed control 
+                        <span className='pharma-info-bold'>Control Systems:</span> These include programmable logic controllers (PLCs), distributed control 
                         systems (DCS), and supervisory control and data acquisition (SCADA) systems. They manage and 
                         monitor equipment and processes in real-time.
                     </li>
                     <li>
-                        Process Analytical Technology (PAT): An integrated system for designing, analyzing, and 
+                        <span className='pharma-info-bold'>Process Analytical Technology (PAT):</span> An integrated system for designing, analyzing, and 
                         controlling manufacturing processes through timely measurements of critical quality and 
                         performance attributes.
                     </li>
                     <li>
-                        Robotic Systems: Robots are used for repetitive tasks such as filling, capping, packaging, and 
+                        <span className='pharma-info-bold'>Robotic Systems:</span> Robots are used for repetitive tasks such as filling, capping, packaging, and 
                         palletizing.
                     </li>
                     <li>
-                        Manufacturing Execution Systems (MES): These are computerized systems used to track and 
+                        <span className='pharma-info-bold'>Manufacturing Execution Systems (MES):</span> These are computerized systems used to track and 
                         document the transformation of raw materials into finished goods, ensuring traceability and 
                         record integrity.
                     </li>
                     <li>
-                        Enterprise Resource Planning (ERP) Systems: Integrates various business processes and functions
+                        <span className='pharma-info-bold'>Enterprise Resource Planning (ERP) Systems:</span> Integrates various business processes and functions
                          across an enterprise into a unified system.
                     </li>
                 </ul>
+                <img src={images.pharmaBody2}/>
                 <h2>Benefits of Automation</h2>
                 <p>
                     Automation in pharmaceutical manufacturing offers several benefits: It ensures consistent product 
@@ -67,8 +69,10 @@ function Pharma() {
                     of the industry. The advancements in Industry 4.0, the Industrial Internet of Things (IIoT), and artificial 
                     intelligence are expected to further enhance automation in the pharmaceutical sector.
                 </p>
+                <a href='/contact'>Contact Our Automation Experts</a>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Calibration.scss'
 import SideNavbar from '../../../components/sideNavbarCapabilities/SideNavbar'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -26,15 +27,15 @@ function Calibration() {
                 <h2>Importance of Calibration</h2>
                 <ul>
                     <li>
-                        Measurement Accuracy: Calibration ensures that measurement instruments provide accurate and reliable 
+                        <span className='calibration-info-bold'>Measurement Accuracy:</span> Calibration ensures that measurement instruments provide accurate and reliable 
                         results, reducing the risk of errors and inaccuracies in data.
                     </li>
                     <li>
-                        Quality Control: In manufacturing and production, calibration is crucial to maintaining the quality and 
+                        <span className='calibration-info-bold'>Quality Control:</span> In manufacturing and production, calibration is crucial to maintaining the quality and 
                         consistency of products by ensuring that equipment is operating within specified tolerances.
                     </li>
                     <li>
-                        Compliance: Many industries have regulatory requirements that mandate regular calibration of measurement 
+                        <span className='calibration-info-bold'>Compliance:</span> Many industries have regulatory requirements that mandate regular calibration of measurement 
                         instruments to meet quality and safety standards.
                     </li>
                 </ul>
@@ -46,58 +47,59 @@ function Calibration() {
                 </p>
                 <ol>
                     <li>
-                        Selecting a Standard: Choose a standard or reference instrument or artifact with a known, traceable measurement value.
+                        <span className='calibration-info-bold'>Selecting a Standard:</span> Choose a standard or reference instrument or artifact with a known, traceable measurement value.
                     </li>
                     <li>
-                        Comparison: Compare the measurements of the instrument being calibrated with the standard.
+                        <span className='calibration-info-bold'>Comparison:</span> Compare the measurements of the instrument being calibrated with the standard.
                     </li>
                     <li>
-                        Adjustment: If discrepancies are identified, make necessary adjustments to the instrument to bring it within acceptable tolerances.
+                        <span className='calibration-info-bold'>Adjustment:</span> If discrepancies are identified, make necessary adjustments to the instrument to bring it within acceptable tolerances.
                     </li>
                     <li>
-                        Documentation: Maintain records of calibration procedures, results, and adjustments for compliance and traceability.
+                        <span className='calibration-info-bold'>Documentation:</span> Maintain records of calibration procedures, results, and adjustments for compliance and traceability.
                     </li>
                 </ol>
+                <img src={images.calibrationBody2}/>
                 <h2>Applications of Calibration</h2>
                 <ul>
                     <li>
-                        Manufacturing: Calibration is essential for quality control in manufacturing processes, ensuring that machines, 
+                        <span className='calibration-info-bold'>Manufacturing:</span> Calibration is essential for quality control in manufacturing processes, ensuring that machines, 
                         tools, and sensors produce products that meet precise specifications.
                     </li>
                     <li>
-                        Laboratory and Scientific Instruments: Instruments used in laboratories, such as spectrophotometers, balances, and pipettes, require 
+                        <span className='calibration-info-bold'>Laboratory and Scientific Instruments:</span> Instruments used in laboratories, such as spectrophotometers, balances, and pipettes, require 
                         regular calibration to maintain accurate results in chemical analysis, research, and experimentation.
                     </li>
                     <li>
-                        Aerospace and Defense: In aerospace and defense, calibration ensures the accuracy of navigation and guidance systems, radar, and 
+                        <span className='calibration-info-bold'>Aerospace and Defense:</span> In aerospace and defense, calibration ensures the accuracy of navigation and guidance systems, radar, and 
                         communication equipment.
                     </li>
                     <li>
-                        Automotive: Automotive manufacturers use calibration to ensure the accuracy of sensors and measurement devices in vehicle systems, 
+                        <span className='calibration-info-bold'>Automotive:</span> Automotive manufacturers use calibration to ensure the accuracy of sensors and measurement devices in vehicle systems, 
                         such as engine control units and emissions control systems.
                     </li>
                     <li>
-                        Healthcare: Medical equipment, such as blood pressure monitors, MRI machines, and diagnostic devices, must be calibrated to ensure 
+                        <span className='calibration-info-bold'>Healthcare:</span> Medical equipment, such as blood pressure monitors, MRI machines, and diagnostic devices, must be calibrated to ensure 
                         patient safety and accurate diagnosis.
                     </li>
                     <li>
-                        Environmental Monitoring: Instruments used for monitoring environmental parameters, including air quality, water quality, and weather, 
+                        <span className='calibration-info-bold'>Environmental Monitoring:</span> Instruments used for monitoring environmental parameters, including air quality, water quality, and weather, 
                         require calibration to provide reliable data for environmental assessment and regulation compliance.
                     </li>
                     <li>
-                        Energy and Utilities: Calibration is crucial in the energy sector for instruments measuring electricity, gas, and water consumption, as 
+                        <span className='calibration-info-bold'>Energy and Utilities:</span> Calibration is crucial in the energy sector for instruments measuring electricity, gas, and water consumption, as 
                         well as power generation and distribution equipment.
                     </li>
                     <li>
-                        Food and Beverage: Calibration ensures that instruments used in food processing and quality control, such as temperature sensors and pH 
+                        <span className='calibration-info-bold'>Food and Beverage:</span> Calibration ensures that instruments used in food processing and quality control, such as temperature sensors and pH 
                         meters, maintain the accuracy needed for product safety and consistency.
                     </li>
                     <li>
-                        Construction and Engineering: In construction and civil engineering, calibration is essential for surveying instruments, geotechnical 
+                        <span className='calibration-info-bold'>Construction and Engineering:</span> In construction and civil engineering, calibration is essential for surveying instruments, geotechnical 
                         testing equipment, and materials testing devices.
                     </li>
                     <li>
-                        Metrology and Standards Laboratories: Calibration laboratories themselves provide calibration services for a wide range of industries and 
+                        <span className='calibration-info-bold'>Metrology and Standards Laboratories:</span> Calibration laboratories themselves provide calibration services for a wide range of industries and 
                         maintain national and international measurement standards.
                     </li>
                 </ul>
@@ -105,8 +107,10 @@ function Calibration() {
                     Calibration is a fundamental process that supports accurate measurements, quality assurance, and compliance in diverse fields, contributing to 
                     the reliability and safety of products and processes.
                 </p>
+                <a href='/contact'>Contact Our Automation Experts</a>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

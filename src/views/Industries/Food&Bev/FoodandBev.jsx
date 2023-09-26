@@ -1,6 +1,7 @@
 import React from 'react'
 import './FoodandBev.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -51,14 +52,17 @@ function FoodandBev() {
                         to changes in the production line.
                     </li>
                 </ul>
+                <img src={images.FoodandBevBody2}/>
                 <p>
                     The adoption of automation in the food and beverage industry is driven by the need to meet the growing global 
                     food demand, ensure food safety, and cope with the challenges of labor shortages in some regions. However, it also 
                     presents challenges, such as the displacement of jobs and the need for workers to acquire new skills to work alongside 
                     automated systems.
                 </p>
+                <a href='/contact'>Contact Our Automation Experts</a>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

@@ -4,10 +4,6 @@ import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
 import img4 from './img4.jpg'
-import customer1 from './customer1.jpg'
-import customer2 from './customer2.jpg'
-import customer3 from './customer3.jpg'
-import customer4 from './customer4.jpg'
 import system_integration from './system_integration.jpg'
 import industrialRobotics from './industrialRobotics.jpg'
 import machining1 from './metal-grinding.jpg'
@@ -34,18 +30,29 @@ import robotics from './overview/robotic_hand.jpg'
 import scada from './overview/scada.jpg'
 //industries
 import foodandbev1 from './industries/food-processing-automation.jpg'
+import FoodandBevBody2 from './industries/foodAndBevBody2.jpg'
 import aerospaceBody from './industries/aerospace-body.jpg'
+import aerospaceBody2 from './industries/aerospace-body2.jpg'
 import pharmaBody from './industries/pharmaManufacturing.jpg'
+import pharmaBody2 from './industries/pharmaBody2.jpg'
 import industrialBody from './industries/Industrial-automation-main.jpg'
+import industrialBody2 from './industries/industrialBody2.jpg'
 import partManufacturingBody from './industries/part_manufacturing.jpg'
+import partManufacturingBody2 from './industries/partManufacturingBody2.jpg'
 import packagingBody from './industries/packaging.jpg'
+import packagingBody2 from './industries/packagingBody2.jpg'
 //capabilities
 import manufacturingBody from './capabilities/partManufacturing.jpg'
+import manufacturingBody2 from './capabilities/manufacturingBody2.jpg'
 import buildingAutomationBody from './capabilities/buildingAutoamtion2.jpg'
+import buildingAutomationBody2 from './capabilities/buildingAutomationBody2.jpg'
 import scadaBody from './capabilities/scada.jpg'
+import scadaBody2 from './capabilities/scadaBody2.jpg'
 import systemIntegrationBody from './capabilities/complete_automation.jpg'
-import calibrationBody from './capabilities/calibration.jpg'
+import calibrationBody from './capabilities/calibrationBody.jpg'
+import calibrationBody2 from './capabilities/calibrationBody2.jpg'
 import mechDesignBody from './capabilities/mechanical-design.jpg'
+import mechDesignBody2 from './capabilities/mechanicalBody2.jpg'
 import palletizingBody from './capabilities/palletizing-body.jpg'
 //support
 import remoteSupportBody from './support/remote-support.jpg'
@@ -58,10 +65,6 @@ export default {
     img2,
     img3,
     img4,
-    customer1,
-    customer2,
-    customer3,
-    customer4,
     system_integration,
     industrialRobotics,
     machining1,
@@ -86,18 +89,29 @@ export default {
     scada,
 
     foodandbev1,
+    FoodandBevBody2,
     aerospaceBody,
+    aerospaceBody2,
     pharmaBody,
+    pharmaBody2,
     industrialBody,
+    industrialBody2,
     partManufacturingBody,
+    partManufacturingBody2,
     packagingBody,
+    packagingBody2,
 
     manufacturingBody,
+    manufacturingBody2,
     buildingAutomationBody,
+    buildingAutomationBody2,
     scadaBody,
+    scadaBody2,
     systemIntegrationBody,
     calibrationBody,
+    calibrationBody2,
     mechDesignBody,
+    mechDesignBody2,
     palletizingBody,
 
     remoteSupportBody,

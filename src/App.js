@@ -50,7 +50,7 @@ function App() {
           <Route path="/industrialautomation" element={<Industrial />} />
           <Route path="/partmanufacturing" element={<PartManufacturing />} />
           <Route path="/packaging" element={<Packaging />} />
-          <Route path="/palletizing" element={<Palletizing />} />
+          <Route path="/palletization" element={<Palletizing />} />
 
           <Route path="/manufacturing" element={<Manufacturing />} />
           <Route path="/buildingautomation" element={<BuildingAutomation />} />

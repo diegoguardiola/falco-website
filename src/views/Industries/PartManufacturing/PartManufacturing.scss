@@ -9,11 +9,17 @@ body {
 
     .part-manufacturing-header {
         display: flex;
-        height: 40vh;
+        height: 70vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
+        background-image: url('../../../images/industries/partManufacturingHeader.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
 
         &::before {
             content: "";
@@ -38,18 +44,41 @@ body {
     .part-manufacturing-body {
         display: flex;
         flex-direction: row;
-        width: 85vw;
+        width: 75vw;
         
 
         .part-manufacturing-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
+            width: 65vw;
+            align-items: center;
 
             img{
                 width: 60vw;
                 height: auto;
-                margin: 0rem 1.1rem;
+                margin: 1.5rem 1.1rem;
+            }
+
+            h1, h2 {
+                color: #25289a;
+                margin-bottom: 1rem;
+            }
+
+            .part-manufacturing-info-bold {
+                font-weight: bold;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                background-color: #25289a;
+                width: 13vw;
+                height: 9vh;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                color: white;
             }
         }
     }

@@ -5,11 +5,11 @@ import { images } from '../../images/'
 function About() {
   return (
     <div className='about-container'>
+        <div className='about-header'>
+            <h1>About Falco Automation</h1>
+        </div>
         <div className='about-header-image'>
             <img src={images.aboutUsHeader}/>
-        </div>
-        <div className='about-header'>
-            <h1>About Falco</h1>
         </div>
         <div className='about-overview'>
             <div className='about-overview-text'>
@@ -25,7 +25,7 @@ function About() {
                     At Falco Automation, we pride ourselves in 
                     Our goal is to increase the efficiency and productivity of your business with world-class solutions.
                 </p>
-                <ul>
+                <ul className='about-menu'>
                     <li><a href="/aerospace">Aerospace</a></li>
                     <li><a href="/foodandbeverage">Food & Beverage</a></li>
                     <li><a href="/pharmamanufacturing">Pharmaceutical Manufacturing</a></li>
@@ -37,6 +37,9 @@ function About() {
             <div className='about-map'>
                 <img className='about-map-img' src={images.aboutUsMap}/>
             </div>
+        </div>
+        <div className='about-automation-impact'>
+            
         </div>
     </div>
   )

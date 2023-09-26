@@ -11,7 +11,7 @@ const SideNavbar = () => {
         <li><a href="/systemintegration">System Integration</a></li>
         <li><a href="/calibration">Calibration</a></li>
         <li><a href="/mechdesign">Mechanical Design</a></li>
-        <li><a href="/palletizing">Palletizing</a></li>
+        <li><a href="/palletization">Palletization</a></li>
       </ul>
     </div>
   );

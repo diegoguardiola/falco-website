@@ -35,8 +35,9 @@
 
         img {
             width: auto;
-            height: 90%; /* Adjusted to leave space for h1 and p */
+            height: 95vh; /* Adjusted to leave space for h1 and p */
             margin-right: 35%;
+            margin-bottom: -5vh;
             @media (max-width: 768px) {
                 /* Media query for mobile devices */
                 width: 100%;

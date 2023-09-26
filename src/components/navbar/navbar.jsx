@@ -31,7 +31,7 @@ const Navbar = () => {
         { name: "System Integration", path: "/systemintegration" },
         { name: "Calibration", path: "/calibration" },
         { name: "Mechanical Design", path: "/mechdesign" },
-        { name: "Palletizing", path: "/palletizing" }
+        { name: "Palletization", path: "/palletization" }
       ]
   },
     { name: "About", path: "/about" },

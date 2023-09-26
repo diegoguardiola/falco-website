@@ -1,6 +1,7 @@
 import React from 'react'
 import './MechDesign.scss'
 import SideNavbar from '../../../components/sideNavbarCapabilities/SideNavbar'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -27,73 +28,74 @@ function MechDesign() {
                 <h2>Applications of Mechanical Design</h2>
                 <ul>
                     <li>
-                        Consumer Products: Mechanical design is commonly used to create consumer goods such as smartphones, 
+                        <span className='mech-design-info-bold'>Consumer Products:</span> Mechanical design is commonly used to create consumer goods such as smartphones, 
                         laptops, appliances, and sporting equipment. The design process aims to optimize functionality, user 
                         experience, and aesthetics.
                     </li>
                     <li>
-                        Automotive Industry: In the automotive sector, mechanical design is critical for designing vehicles, 
+                        <span className='mech-design-info-bold'>Automotive Industry:</span> In the automotive sector, mechanical design is critical for designing vehicles, 
                         engines, transmissions, and various vehicle components. Design engineers work on aspects like safety, 
                         fuel efficiency, and performance.
                     </li>
                     <li>
-                        Aerospace and Aviation: Mechanical design is essential in the development of aircraft, spacecraft, and 
+                        <span className='mech-design-info-bold'>Aerospace and Aviation:</span> Mechanical design is essential in the development of aircraft, spacecraft, and 
                         related systems. Engineers focus on factors like aerodynamics, structural integrity, and propulsion 
                         systems.
                     </li>
                     <li>
-                        Industrial Machinery: Mechanical design plays a central role in designing industrial machinery, 
+                        <span className='mech-design-info-bold'>Industrial Machinery:</span> Mechanical design plays a central role in designing industrial machinery, 
                         manufacturing equipment, and automation systems used in factories and production facilities.
                     </li>
                     <li>
-                        Energy Sector: In the energy sector, mechanical design is used to create power generation equipment,
+                        <span className='mech-design-info-bold'>Energy Sector:</span> In the energy sector, mechanical design is used to create power generation equipment,
                          renewable energy systems, and efficient machinery for oil and gas exploration.
                     </li>
                     <li>
-                        Medical Devices: Mechanical design is integral to the creation of medical devices, including surgical 
+                        <span className='mech-design-info-bold'>Medical Devices:</span> Mechanical design is integral to the creation of medical devices, including surgical 
                         instruments, imaging equipment, and prosthetic limbs. Precision and safety are top priorities in this field.
                     </li>
                     <li>
-                        Heavy Equipment: The design of heavy construction equipment, agricultural machinery, and mining machinery 
+                        <span className='mech-design-info-bold'>Heavy Equipment:</span> The design of heavy construction equipment, agricultural machinery, and mining machinery 
                         falls under mechanical engineering. These designs prioritize durability, efficiency, and safety.
                     </li>
                     <li>
-                        Defense and Military: Mechanical design is used to develop military vehicles, weapons systems, and equipment. 
+                        <span className='mech-design-info-bold'>Defense and Military:</span> Mechanical design is used to develop military vehicles, weapons systems, and equipment. 
                         Engineers focus on ruggedness, reliability, and performance in extreme conditions.
                     </li>
                 </ul>
+                <img src={images.mechDesignBody2}/>
                 <h2>The Mechanical Design Proccess</h2>
                 <ol>
                     <li>
-                        Conceptualization: This stage involves brainstorming and generating ideas for the product or system's design. 
+                        <span className='mech-design-info-bold'>Conceptualization:</span> This stage involves brainstorming and generating ideas for the product or system's design. 
                         Engineers consider functionality, user requirements, and constraints.
                     </li>
                     <li>
-                        Analysis: Engineers perform analysis using mathematical and computational tools to assess the feasibility and 
+                        <span className='mech-design-info-bold'>Analysis:</span> Engineers perform analysis using mathematical and computational tools to assess the feasibility and 
                         performance of different design concepts. This may involve stress analysis, heat transfer analysis, and simulations.
                     </li>
                     <li>
-                        Detailed Design: Once a concept is chosen, engineers create detailed drawings, schematics, and 3D models of the design. 
+                        <span className='mech-design-info-bold'>Detailed Design:</span> Once a concept is chosen, engineers create detailed drawings, schematics, and 3D models of the design. 
                         This phase involves specifying materials, dimensions, and tolerances.
                     </li>
                     <li>
-                        Prototyping: A prototype or model is created to validate the design. Prototyping helps identify and address any issues 
+                        <span className='mech-design-info-bold'>Prototyping:</span> A prototype or model is created to validate the design. Prototyping helps identify and address any issues 
                         or flaws in the design.
                     </li>
                     <li>
-                        Testing and Evaluation: The prototype undergoes testing to ensure it meets performance, safety, and regulatory standards. 
+                        <span className='mech-design-info-bold'>Testing and Evaluation:</span> The prototype undergoes testing to ensure it meets performance, safety, and regulatory standards. 
                         Engineers gather data and make improvements as needed.
                     </li>
                     <li>
-                        Manufacturing and Production: Once the design is finalized and tested, it can move into production. 
+                        <span className='mech-design-info-bold'>Manufacturing and Production:</span> Once the design is finalized and tested, it can move into production. 
                         This phase involves selecting manufacturing processes, tooling, and quality control measures.
                     </li>
                     <li>
-                        Maintenance and Optimization: After the product is in use, ongoing maintenance and optimization may be required to ensure
+                        <span className='mech-design-info-bold'>Maintenance and Optimization:</span> After the product is in use, ongoing maintenance and optimization may be required to ensure
                          its long-term performance and reliability.
                     </li>
                     <li>
-                        Documentation: Proper documentation of the design, including drawings, specifications, and manuals, is critical for future 
+                        <span className='mech-design-info-bold'>Documentation:</span> Proper documentation of the design, including drawings, specifications, and manuals, is critical for future 
                         reference and maintenance.
                     </li>
                 </ol>
@@ -102,8 +104,10 @@ function MechDesign() {
                     manufacturing processes. It plays a vital role in shaping the physical world around us and continually drives innovation and 
                     technological advancement.
                 </p>
+                <a href='/contact'>Contact Our Automation Experts</a>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

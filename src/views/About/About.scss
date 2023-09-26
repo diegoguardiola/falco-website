@@ -4,15 +4,22 @@
     flex-direction: column;
     align-items: center;
 
+    h1, h2 {
+        color: #25289a;
+        margin-bottom: 1rem;
+    }
+
     .about-header-image {
         display: flex;
-        margin-top: 20vh;
+        margin-bottom: 5vh;
+        
     }
 
     .about-header {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 20vh;
     }
 
     .about-overview {
@@ -27,6 +34,29 @@
             align-items: flex-start;
             flex-direction: column;
             width: 45vw;
+
+            
+                
+            .about-menu li {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                background-color: #25289a;
+                width: 17vw;
+                height: 5vh;
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+                margin: 5px;
+            }
+            
+            .about-menu li a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+            }
+           
         }
 
         .about-map {
