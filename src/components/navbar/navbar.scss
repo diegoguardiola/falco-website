@@ -106,8 +106,33 @@
     list-style-type: none;
     margin-top: 0; 
     padding-top: 0;
-    top: 100%
+
+    li {
+      position: relative;
+      
+      .sub-submenu {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.3s ease;
+        
+        // Here, the position is NOT absolute, so it will push sibling elements.
+        // Also, do not use top and left property for positioning here.
+        
+        width: 100%; // Adjust as per your design preference
+        background-color: white; // Or your preferred color
+        
+        // Additional styles for sub-submenu...
+      }
+      
+      &:hover .sub-submenu {
+        max-height: 500px; // Adjust as needed to fit your sub-submenu content
+        opacity: 1;
+      }
+    }
   }
+
+  
   
   li:hover .submenu {
     transition-delay: 2s; /* No delay when hovering */

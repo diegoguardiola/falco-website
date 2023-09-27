@@ -36,7 +36,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/falco-website" element={<Home />} />
-          <Route path="/services/:sectionId" element={<Services />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/resources/casestudies" element={<CaseStudies />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/capabilities" element={<Capabilities />} />

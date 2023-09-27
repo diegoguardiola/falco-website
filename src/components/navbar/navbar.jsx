@@ -10,15 +10,22 @@ const Navbar = () => {
 
   const menuItems = [
     {
-      name: "Industries", 
-      path: "/industries", 
+      name: "Services", 
+      path: "/services", 
       subMenu: [
-          { name: "Aerospace", path: "/aerospace" },
-          { name: "Food & Beverage", path: "/foodandbeverage" },
-          { name: "Pharmaceutical Manufacturing", path: "/pharmamanufacturing" },
-          { name: "Industrial Automation", path: "/industrialautomation" },
-          { name: "Part Manufacturing", path: "/partmanufacturing" },
-          { name: "Packaging", path: "/packaging" },
+        { 
+            name: "Aerospace", 
+            path: "/aerospace",
+            subMenu: [
+                { name: "Engine", path: "/engine" },
+                { name: "Fuselage", path: "/fuselage" },
+            ]
+        },
+        { name: "Food & Beverage", path: "/foodandbeverage" },
+        { name: "Pharmaceutical Manufacturing", path: "/pharmamanufacturing" },
+        { name: "Industrial Automation", path: "/industrialautomation" },
+        { name: "Part Manufacturing", path: "/partmanufacturing" },
+        { name: "Packaging", path: "/packaging" },
       ]
     },
     { 
@@ -61,18 +68,28 @@ const Navbar = () => {
                 <div>
                     <Link className='link-style' to={item.path}>{item.name}</Link>
                     {item.subMenu && (
-                        <ul className='submenu'>
-                            {item.subMenu.map(sub => (
-                                <li key={`submenu-${sub.name}`}>
-                                    <Link className='link-style' to={sub.path}>{sub.name}</Link>
-                                </li>
-                            ))}
-                        </ul>
+                      <ul className='submenu'>
+                        {item.subMenu.map(sub => (
+                            <li key={`submenu-${sub.name}`}>
+                                <Link className='link-style' to={sub.path}>{sub.name}</Link>
+                                {sub.subMenu && (
+                                    <ul className='sub-submenu'>
+                                        {sub.subMenu.map(subsub => (
+                                            <li key={`sub-submenu-${subsub.name}`}>
+                                                <Link className='link-style' to={subsub.path}>{subsub.name}</Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </li>
+                        ))}
+                      </ul>
                     )}
                 </div>
             </li>
         ))}
       </ul>
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (

@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.scss'
 import { images } from '../../images/'
+import Footer from '../../components/Footer/Footer'
 
 function About() {
   return (
@@ -38,9 +39,14 @@ function About() {
                 <img className='about-map-img' src={images.aboutUsMap}/>
             </div>
         </div>
-        <div className='about-automation-impact'>
-            
+        <div className='about-automation-impact'> 
+            <h1>Our Impact In the World of Automation</h1>
+            <p>
+                specializing in industrial automation services, Falco Automation has swiftly become a best-in-class automation solutions 
+                provider for clients across a number of manufacturing sectors. 
+            </p>
         </div>
+        <Footer />
     </div>
   )
 }
