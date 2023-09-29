@@ -14,16 +14,37 @@ const Navbar = () => {
       path: "/services", 
       subMenu: [
         { 
-            name: "Aerospace", 
-            path: "/aerospace",
-            subMenu: [
-                { name: "Engine", path: "/engine" },
-                { name: "Fuselage", path: "/fuselage" },
-            ]
+          name: "Aerospace", 
+          path: "/services/aerospace",
         },
-        { name: "Food & Beverage", path: "/foodandbeverage" },
-        { name: "Pharmaceutical Manufacturing", path: "/pharmamanufacturing" },
-        { name: "Industrial Automation", path: "/industrialautomation" },
+        { 
+          name: "Food & Beverage", 
+          path: "services/foodandbeverage",
+          subMenu: [
+            { name: "Packaging", path: "/services/foodandbeverage/packaging" },
+            { name: "Processing", path: "/services/foodandbeverage/processing" },
+          ] 
+        },
+        { 
+          name: "Pharmaceutical Manufacturing", 
+          path: "/services/pharmaceutical",
+          subMenu: [
+            { name: "Calibration", path: "/services/pharmaceutical/calibration" },
+            { name: "Bioreactors", path: "/services/pharmaceutical/bioreactors" },
+            { name: "Validation", path: "/services/pharmaceutical/validation" },
+          ]  
+        },
+        { 
+          name: "Industrial Automation", 
+          path: "/industrialautomation",
+          subMenu: [
+            { name: "Start Up & Comissioning", path: "/services/industrial/startup" },
+            { name: "Upgrades", path: "/services/industrial/upgrades" },
+            { name: "Full Automation", path: "/services/industrial/fullautomation" },
+            { name: "Calibration", path: "/services/industrial/calibration" },
+            { name: "Documentation", path: "/services/industrial/documentation" },
+          ] 
+        },
         { name: "Part Manufacturing", path: "/partmanufacturing" },
         { name: "Packaging", path: "/packaging" },
       ]

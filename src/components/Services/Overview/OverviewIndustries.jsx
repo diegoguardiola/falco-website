@@ -23,7 +23,7 @@ function Overview() {
     <div className='service_overview_card_container'>
         {/*Row 1*/}
         <div className='service_overview_card_row'>  
-            <a href="/aerospace" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[0]})` }}>
+            <a href="/services/aerospace" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[0]})` }}>
                 <FaFighterJet className='services_icon'/>
                 <h1>Aerospace</h1>
             </a>

@@ -10,10 +10,15 @@ import About from './views/About/About';
 import Contact from './views/Contact/Contact';
 import CaseStudies from './views/CaseStudies/CaseStudies';
 
-import FoodandBev from './views/Industries/Food&Bev/FoodandBev';
-import Aerospace from './views/Industries/Aerospace/Aerospace';
-import Pharma from './views/Industries/Pharma/Pharma';
-import Industrial from './views/Industries/Industrial/Industrial';
+import Aerospace from './views/Services/Aerospace/Aerospace';
+import FoodandBev from './views/Services/FoodandBeverage/FoodandBev';
+  import PackagingFB from './views/Services/FoodandBeverage/Packaging/Packaging';
+  import ProcessingFB from './views/Services/FoodandBeverage/Processing/Processing';
+import Pharma from './views/Services/Pharma/Pharma';
+  import CalibrationPharma from './views/Services/Pharma/Calibration/Calibration';
+  import Bioreactors from './views/Services/Pharma/Bioreactors/Bioreactors';
+  import PharmaValidation from './views/Services/Pharma/Validation/Validation';
+import Industrial from './views/Services/Industrial/Industrial';
 import PartManufacturing from './views/Industries/PartManufacturing/PartManufacturing';
 import Packaging from './views/Industries/Packaging/Packaging';
 
@@ -37,6 +42,16 @@ function App() {
         <Routes>
           <Route path="/falco-website" element={<Home />} />
           <Route path="/services" element={<Services />} />
+            <Route path="/services/aerospace" element={<Aerospace />} />
+            <Route path="services/foodandbeverage" element={<FoodandBev />} />
+             <Route path="services/foodandbeverage/packaging" element={<PackagingFB />} />
+             <Route path="services/foodandbeverage/processing" element={<ProcessingFB />} />
+            <Route path="/services/pharmaceutical" element={<Pharma />} />
+              <Route path="/services/pharmaceutical/calibration" element={<CalibrationPharma />} />
+              <Route path="/services/pharmaceutical/bioreactors" element={<Bioreactors />} />
+              <Route path="/services/pharmaceutical/validation" element={<PharmaValidation />} />
+              <Route path="/industrialautomation" element={<Industrial />} />
+
           <Route path="/resources/casestudies" element={<CaseStudies />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/capabilities" element={<Capabilities />} />
@@ -44,10 +59,9 @@ function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/foodandbeverage" element={<FoodandBev />} />
-          <Route path="/aerospace" element={<Aerospace />} />
+          
           <Route path="/pharmamanufacturing" element={<Pharma />} />
-          <Route path="/industrialautomation" element={<Industrial />} />
+          
           <Route path="/partmanufacturing" element={<PartManufacturing />} />
           <Route path="/packaging" element={<Packaging />} />
           <Route path="/palletization" element={<Palletizing />} />

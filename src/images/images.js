@@ -28,6 +28,21 @@ import packagingAutomation from './overview/packaging autoamtion.jpg'
 import pharma from './overview/pharma1.jpg'
 import robotics from './overview/robotic_hand.jpg'
 import scada from './overview/scada.jpg'
+//services
+import aerospaceOverview from './services/Aerospace/aerospaceOverview.jpg'
+import aerospaceOverview2 from './services/Aerospace/aerospaceOverview2.jpg'
+import foodAndBevPackaging1 from './services/FoodandBev/FoodandBevPackaging1.jpeg'
+import foodAndBevPackaging2 from './services/FoodandBev/FoodandBevPackaging2.jpg'
+import foodAndBevProcessing1 from './services/FoodandBev/FoodandBevProcessing1.jpg'
+import pharmaCalibration1 from './services/Pharma/PharmaCalibration1.jpg'
+import pharmaCalibration2 from './services/Pharma/PharmaCalibration2.jpg'
+import pharmaBioreactor1 from './services/Pharma/PharmaBioreactor1.jpg'
+import pharmaBioreactor2 from './services/Pharma/PharmaBioreactor2.jpg'
+import pharmaValidation1 from './services/Pharma/PharmaValidation1.jpeg'
+import industrialBody1 from './services/Industrial/IndustrialOverview1.jpg'
+import industrialBody2 from './industries/Industrial-automation-main.jpg'
+import industrialBody3 from './industries/industrialBody2.jpg'
+
 //industries
 import foodandbev1 from './industries/food-processing-automation.jpg'
 import FoodandBevBody2 from './industries/foodAndBevBody2.jpg'
@@ -35,8 +50,8 @@ import aerospaceBody from './industries/aerospace-body.jpg'
 import aerospaceBody2 from './industries/aerospace-body2.jpg'
 import pharmaBody from './industries/pharmaManufacturing.jpg'
 import pharmaBody2 from './industries/pharmaBody2.jpg'
-import industrialBody from './industries/Industrial-automation-main.jpg'
-import industrialBody2 from './industries/industrialBody2.jpg'
+
+
 import partManufacturingBody from './industries/part_manufacturing.jpg'
 import partManufacturingBody2 from './industries/partManufacturingBody2.jpg'
 import packagingBody from './industries/packaging.jpg'
@@ -87,15 +102,35 @@ export default {
     pharma,
     robotics,
     scada,
+    //Services
+        //Aerospace
+        aerospaceOverview,
+        aerospaceOverview2,
+        //Food and Bev
+        foodandbev1,
+        FoodandBevBody2,
+        foodAndBevPackaging1,
+        foodAndBevPackaging2,
+        foodAndBevProcessing1,
+        //Pharma
+        pharmaCalibration1,
+        pharmaCalibration2,
+        pharmaBioreactor1,
+        pharmaBioreactor2,
+        pharmaValidation1,
+        //industrial
+        industrialBody1,
+        industrialBody2,
+        industrialBody3,
 
+    
     foodandbev1,
     FoodandBevBody2,
     aerospaceBody,
     aerospaceBody2,
     pharmaBody,
     pharmaBody2,
-    industrialBody,
-    industrialBody2,
+    
     partManufacturingBody,
     partManufacturingBody2,
     packagingBody,

@@ -5,12 +5,12 @@ const SideNavbar = () => {
   return (
     <div className="side-nav">
       <ul>
-        <li><a href="/aerospace">Aerospace</a></li>
-        <li><a href="/foodandbeverage">Food & Beverage</a></li>
-        <li><a href="/pharmamanufacturing">Pharmaceutical Manufacturing</a></li>
-        <li><a href="/industrialautomation">Industrial Automation</a></li>
-        <li><a href="/partmanufacturing">Part Manufacturing</a></li>
-        <li><a href="/packaging">Packaging</a></li>
+        <li><a href="/services/aerospace">Aerospace</a></li>
+        <li><a href="/services/foodandbeverage">Food & Beverage</a></li>
+        <li><a href="/services/pharmaceutical">Pharmaceutical Manufacturing</a></li>
+        <li><a href="/services/industrialautomation">Industrial Automation</a></li>
+        <li><a href="/services/partmanufacturing">Part Manufacturing</a></li>
+        <li><a href="/services/packaging">Packaging</a></li>
       </ul>
     </div>
   );
