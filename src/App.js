@@ -19,7 +19,13 @@ import Pharma from './views/Services/Pharma/Pharma';
   import Bioreactors from './views/Services/Pharma/Bioreactors/Bioreactors';
   import PharmaValidation from './views/Services/Pharma/Validation/Validation';
 import Industrial from './views/Services/Industrial/Industrial';
-import PartManufacturing from './views/Industries/PartManufacturing/PartManufacturing';
+  import StartUp from './views/Services/Industrial/StartUp/StartUp';
+  import IndustrialUpgrades from './views/Services/Industrial/Upgrades/Upgrades';
+  import FullAutomation from './views/Services/Industrial/FullAutomation/FullAutomation';
+  import IndustrialCalibration from './views/Services/Industrial/Calibration/Calibration';
+  import IndustrialDocumentation from './views/Services/Industrial/Documentation/Documentation';
+import PartManufacturing from './views/Services/PartManufacturing/PartManufacturing';
+
 import Packaging from './views/Industries/Packaging/Packaging';
 
 import Manufacturing from './views/Capabilities/Manufacturing/Manufacturing';
@@ -50,7 +56,13 @@ function App() {
               <Route path="/services/pharmaceutical/calibration" element={<CalibrationPharma />} />
               <Route path="/services/pharmaceutical/bioreactors" element={<Bioreactors />} />
               <Route path="/services/pharmaceutical/validation" element={<PharmaValidation />} />
-              <Route path="/industrialautomation" element={<Industrial />} />
+            <Route path="/services/industrial" element={<Industrial />} />
+              <Route path="services/industrial/startup" element={<StartUp />} />
+              <Route path="services/industrial/upgrades" element={<IndustrialUpgrades />} />
+              <Route path="services/industrial/fullautomation" element={<FullAutomation />} />
+              <Route path="services/industrial/calibration" element={<IndustrialCalibration />} />
+              <Route path="services/industrial/documentation" element={<IndustrialDocumentation />} />
+            <Route path="/partmanufacturing" element={<PartManufacturing />} />
 
           <Route path="/resources/casestudies" element={<CaseStudies />} />
           <Route path="/industries" element={<Industries />} />
@@ -60,9 +72,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           
-          <Route path="/pharmamanufacturing" element={<Pharma />} />
           
-          <Route path="/partmanufacturing" element={<PartManufacturing />} />
+          
           <Route path="/packaging" element={<Packaging />} />
           <Route path="/palletization" element={<Palletizing />} />
 

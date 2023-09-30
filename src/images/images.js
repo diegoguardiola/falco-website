@@ -7,7 +7,6 @@ import img4 from './img4.jpg'
 import system_integration from './system_integration.jpg'
 import industrialRobotics from './industrialRobotics.jpg'
 import machining1 from './metal-grinding.jpg'
-import splash from './splah.jpg'
 import section3image from './section3image.png'
 
 //main pages
@@ -29,8 +28,10 @@ import pharma from './overview/pharma1.jpg'
 import robotics from './overview/robotic_hand.jpg'
 import scada from './overview/scada.jpg'
 //services
+    //aerospace
 import aerospaceOverview from './services/Aerospace/aerospaceOverview.jpg'
 import aerospaceOverview2 from './services/Aerospace/aerospaceOverview2.jpg'
+    //pharma
 import foodAndBevPackaging1 from './services/FoodandBev/FoodandBevPackaging1.jpeg'
 import foodAndBevPackaging2 from './services/FoodandBev/FoodandBevPackaging2.jpg'
 import foodAndBevProcessing1 from './services/FoodandBev/FoodandBevProcessing1.jpg'
@@ -39,9 +40,16 @@ import pharmaCalibration2 from './services/Pharma/PharmaCalibration2.jpg'
 import pharmaBioreactor1 from './services/Pharma/PharmaBioreactor1.jpg'
 import pharmaBioreactor2 from './services/Pharma/PharmaBioreactor2.jpg'
 import pharmaValidation1 from './services/Pharma/PharmaValidation1.jpeg'
+    //industrial
 import industrialBody1 from './services/Industrial/IndustrialOverview1.jpg'
-import industrialBody2 from './industries/Industrial-automation-main.jpg'
-import industrialBody3 from './industries/industrialBody2.jpg'
+import industrialBody2 from './services/Industrial/IndustrialOverview2.jpg'
+import industrialBody3 from './services/Industrial/IndustrialOverview3.jpg'
+import industrialStartup1 from './services/Industrial/IndustrialStartup1.jpg'
+import industrialUpgrades1 from './services/Industrial/IndustrialUpgrades1.jpg'
+import industrialFullAutomation1 from './services/Industrial/IndustrialFullAutomation1.jpg'
+import industrialFullAutomation2 from './services/Industrial/IndustrialFullAutomation2.jpg'
+import industrialCalibration1 from './services/Industrial/IndustrialCalibration1.jpg'
+import industrialDocumentation1 from './services/Industrial/IndustrialDocumentation.jpg'
 
 //industries
 import foodandbev1 from './industries/food-processing-automation.jpg'
@@ -83,7 +91,6 @@ export default {
     system_integration,
     industrialRobotics,
     machining1,
-    splash,
     section3image,
 
     aboutUsHeader,
@@ -122,6 +129,12 @@ export default {
         industrialBody1,
         industrialBody2,
         industrialBody3,
+        industrialStartup1,
+        industrialUpgrades1,
+        industrialFullAutomation1,
+        industrialFullAutomation2,
+        industrialCalibration1,
+        industrialDocumentation1,
 
     
     foodandbev1,

@@ -36,7 +36,7 @@ const Navbar = () => {
         },
         { 
           name: "Industrial Automation", 
-          path: "/industrialautomation",
+          path: "/services/industrial",
           subMenu: [
             { name: "Start Up & Comissioning", path: "/services/industrial/startup" },
             { name: "Upgrades", path: "/services/industrial/upgrades" },
