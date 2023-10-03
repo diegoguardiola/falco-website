@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/falco-website/static/css/main.fd81e15f.css",
-    "main.js": "/falco-website/static/js/main.c414c613.js",
+    "main.css": "/falco-website/static/css/main.633d30b4.css",
+    "main.js": "/falco-website/static/js/main.f7d605b2.js",
     "static/js/726.ee2a7e60.chunk.js": "/falco-website/static/js/726.ee2a7e60.chunk.js",
     "static/js/787.956f1f9e.chunk.js": "/falco-website/static/js/787.956f1f9e.chunk.js",
     "static/media/aerospaceOverview.jpg": "/falco-website/static/media/aerospaceOverview.caab84022c17b1eecf88.jpg",
@@ -86,6 +86,7 @@
     "static/media/overview-calibration.jpg": "/falco-website/static/media/overview-calibration.5c6623fa62d5de8ab3a7.jpg",
     "static/media/aerospace-body2.jpg": "/falco-website/static/media/aerospace-body2.9f44abbb98ac6d5aaf4c.jpg",
     "static/media/remote-support.jpg": "/falco-website/static/media/remote-support.d9586e5f7b61edff12f4.jpg",
+    "static/media/IndustrialDocumentation.jpg": "/falco-website/static/media/IndustrialDocumentation.3eca0799ea3f90ce005b.jpg",
     "static/media/overview-systems-integration.jpg": "/falco-website/static/media/overview-systems-integration.94d631349e1db027862d.jpg",
     "static/media/mitsubishi.png": "/falco-website/static/media/mitsubishi.21ad96cb1e426ae4bf00.png",
     "static/media/plc1.jpg": "/falco-website/static/media/plc1.f7171d5de70659cca80b.jpg",
@@ -94,13 +95,13 @@
     "static/media/ignition.png": "/falco-website/static/media/ignition.47a9a0b7bf3cd2db1fc0.png",
     "static/media/AB.png": "/falco-website/static/media/AB.1bd164d4a293653fd279.png",
     "index.html": "/falco-website/index.html",
-    "main.fd81e15f.css.map": "/falco-website/static/css/main.fd81e15f.css.map",
-    "main.c414c613.js.map": "/falco-website/static/js/main.c414c613.js.map",
+    "main.633d30b4.css.map": "/falco-website/static/css/main.633d30b4.css.map",
+    "main.f7d605b2.js.map": "/falco-website/static/js/main.f7d605b2.js.map",
     "726.ee2a7e60.chunk.js.map": "/falco-website/static/js/726.ee2a7e60.chunk.js.map",
     "787.956f1f9e.chunk.js.map": "/falco-website/static/js/787.956f1f9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd81e15f.css",
-    "static/js/main.c414c613.js"
+    "static/css/main.633d30b4.css",
+    "static/js/main.f7d605b2.js"
   ]
 }
