@@ -2,19 +2,19 @@ body {
     overflow-x: hidden;
   }
 
-.food-and-bev-packaging-container {
+.food-and-bev-processing-container {
     display: flex;
     flex-direction: column;
     max-width: 100%;
 
-    .food-and-bev-packaging-header {
+    .food-and-bev-processing-header {
         display: flex;
         height: 70vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../../images/industries/foodAndBevHeader.jpg');
+        background-image: url('../../../../images/services/FoodandBev/FoodandBevProcessingHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -42,25 +42,25 @@ body {
         }
     }
 
-    .food-and-bev-packaging-body {
+    .food-and-bev-processing-body {
         display: flex;
         flex-direction: row;
         width: 75vw;
         
 
-        .food-and-bev-packaging-info {
+        .food-and-bev-processing-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
             width: 65vw;
             align-items: center;
 
-            .food-and-bev-packaging-capabilities-links {
+            .food-and-bev-processing-capabilities-links {
                 display: flex;
                 justify-content: space-evenly;
                 flex-direction: row;
 
-                .food-and-bev-packaging-capabilities-links-box {
+                .food-and-bev-processing-capabilities-links-box {
                     display: flex;
                     flex-direction: column;
                     width: 20vw;
@@ -97,7 +97,7 @@ body {
                 margin-bottom: 1rem;
             }
 
-            .food-and-bev-packaging-info-bold {
+            .food-and-bev-processing-info-bold {
                 font-weight: bold;
             }
 

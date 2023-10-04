@@ -14,7 +14,7 @@ body {
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../images/industries/foodAndBevHeader.jpg');
+        background-image: url('../../../images/services/FoodandBev/foodAndBevHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -64,8 +64,9 @@ body {
                     display: flex;
                     flex-direction: column;
                     width: 20vw;
-                    height: 30vh;
+                    height: 25vh;
                     margin: 1vw;
+                    background-color: #888888;
                     border: 2px solid black;
                     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
                     overflow: hidden;
@@ -75,13 +76,24 @@ body {
                         flex-direction: column;
                         align-items: center;
                         text-decoration: none;
-                        color: black;
+                        color: white;
                         padding: 5px;
+
+                        .food-and-bev-icon{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            svg {
+                                height: 125px;
+                                width: 125px;
+                                color: white;
+                            }
+                        }
                     }
                 
                     &:hover {
-                        transform: translate3d(0, 0, 10px); /* Apply a 3D translation on hover */
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+                        transform: translate3d(0, 0, 15px); /* Apply a 3D translation on hover */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a shadow on hover */
                     }
                 }
             }

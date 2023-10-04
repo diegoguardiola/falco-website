@@ -1,0 +1,36 @@
+.contact-us-container {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
+    margin: 20px;
+
+    &:hover {
+        transform: translate3d(0, 0, 10px); /* Apply a 3D translation on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+    }
+  
+    .contact-us-text {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      margin-right: 10px; /* Adjust the margin as needed for spacing */
+      transition: color 0.3s ease; /* Add a transition for the color change */
+      text-align: center;
+      padding-right: 10px;
+      text-decoration: underline blue;
+    }
+  
+
+  
+    .contact-us-icon {
+        svg {
+          height: 30px; /* Set the desired height for the icon */
+          width: 30px;
+        }
+    }
+    
+}
+  

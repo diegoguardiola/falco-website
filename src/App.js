@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar';
 import Home from './views/Home/Home';
 import Services from './views/Services/Services';
-import Industries from './views/Industries/Industries';
-import Capabilities from './views/Capabilities/Capabilities';
 import Support from './views/Support/Support';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
@@ -63,18 +61,12 @@ function App() {
               <Route path="/services/packaging/food" element={<PackagingFood />} />
               <Route path="/services/packaging/pharmaceutical" element={<PackagingPharma />} />
               <Route path="/services/packaging/palletization" element={<Palletizing />} />
-
-          <Route path="/resources/casestudies" element={<CaseStudies />} />
-          <Route path="/industries" element={<Industries />} />
-          <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
+            <Route path="/remotesupport" element={<RemoteSupport />} />
+            <Route path="/fieldservice" element={<FieldServices />} />
+            <Route path="/upgrades" element={<Upgrades />} />
           <Route path="/contact" element={<Contact />} />
-
-
-          <Route path="/remotesupport" element={<RemoteSupport />} />
-          <Route path="/fieldservice" element={<FieldServices />} />
-          <Route path="/upgrades" element={<Upgrades />} />
         </Routes>
       </div>
     </Router>

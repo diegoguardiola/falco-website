@@ -1,6 +1,6 @@
 import React from 'react';
 import './CaroselAffiliations.scss';
-import {images} from '../../images'
+import {images} from '../../../images'
 
 const CaroselAffiliations = () => {
     const affiliations = [

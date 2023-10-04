@@ -19,6 +19,11 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+        @media (max-width: 576px) {
+            background-size: contain;
+            height: 40vh;
+            margin-top: 15vh;
+        }
 
 
         &::before {
@@ -38,6 +43,9 @@ body {
         h1 {
             color: white;
             font-size: 4.5rem;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -45,13 +53,20 @@ body {
         display: flex;
         flex-direction: row;
         width: 75vw;
-        
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
 
         .aerospace-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
             width: 65vw;
+            @media (max-width: 576px) {
+                align-items: center;
+              }
 
             img{
                 width: 60vw;
@@ -69,8 +84,8 @@ body {
             .aerospace-info-bold {
                 font-weight: bold;
             }
-
-           
         }
+
+
     }
 }

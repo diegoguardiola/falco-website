@@ -1,6 +1,7 @@
 import React from 'react'
 import './Aerospace.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
@@ -22,7 +23,10 @@ function Aerospace() {
                     tailored to the unique needs of the aerospace industry. With a focus on design, manufacturing, and machining, we 
                     are your trusted partner for automating processes that drive innovation, efficiency, and precision in this dynamic sector.
                 </p>
-                <img src={images.aerospaceOverview}/>
+                <img 
+                    src={images.aerospaceOverview}
+                    alt='machining an engine turbine'
+                />
                 <h2>Machining</h2>
                 <h4>CNC Machining</h4>
                 <p>
@@ -56,35 +60,35 @@ function Aerospace() {
                 <h2>Why Choose Falco Automation?</h2>
                 <ul>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Industry Expertise:</span>
+                        <p> <span className='aerospace-info-bold'>Industry Expertise: </span>
                             Our team boasts years of experience in aerospace automation, and we understand the unique challenges and requirements of the industry.
                         </p>
                     </li>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Custom Solutions:</span>
+                        <p> <span className='aerospace-info-bold'>Custom Solutions: </span>
                             We don't offer one-size-fits-all solutions. Each project is carefully analyzed, and we tailor our automation systems to match your 
                             specific needs and goals.
                         </p>
                     </li>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Cutting Edge Technology:</span>
+                        <p> <span className='aerospace-info-bold'>Cutting Edge Technology: </span>
                             We stay at the forefront of automation technology, ensuring that our solutions incorporate the latest advancements for maximum 
                             performance and efficiency.
                         </p>
                     </li>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Quality Assureance:</span>
+                        <p> <span className='aerospace-info-bold'>Quality Assureance: </span>
                             We are committed to delivering high-quality results. Our rigorous testing and quality control processes guarantee that your automation 
                             systems meet the highest industry standards.
                         </p>
                     </li>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Cost-Efficiency:</span>
+                        <p> <span className='aerospace-info-bold'>Cost-Efficiency: </span>
                             We help you reduce operational costs by improving production efficiency and minimizing errors.
                         </p>
                     </li>
                     <li>
-                        <p> <span className='aerospace-info-bold'>Customer Support:</span>
+                        <p> <span className='aerospace-info-bold'>Customer Support: </span>
                             Our relationship doesn't end with project delivery. We provide ongoing support and maintenance to ensure your automation systems continue 
                             to perform at their best.
                         </p>
@@ -97,8 +101,7 @@ function Aerospace() {
                     quality. Whether you're looking to upgrade existing systems or implement a full-scale automation 
                     transformation, our team is equipped to guide and assist every step of the way.
                 </p>
-
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

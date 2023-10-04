@@ -1,0 +1,56 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  height: 140vh;
+
+  .header_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 10vh;
+      font-weight: bold;
+      margin-top: 20vh;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+      @media (max-width: 576px) {
+        font-size: 2.0rem;
+      }
+    }
+
+    h2 {
+      font-size: 5vh;
+      font-weight: normal;
+      opacity: 0;
+      animation: fadeIn 6s ease forwards;
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .youtube_video_container {
+      margin: 5vh;
+      margin-bottom: 10vh;
+
+      iframe {
+        width: 70vw; /* Make it 100% to fit the container width */
+        height: 70vh; /* Let the height adjust based on the aspect ratio */
+
+        @media (max-width: 576px) {
+          height: 50vh;
+        }
+      }
+    }
+  }
+}
