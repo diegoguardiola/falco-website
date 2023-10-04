@@ -45,23 +45,18 @@ const Navbar = () => {
             { name: "Documentation", path: "/services/industrial/documentation" },
           ] 
         },
-        { name: "Part Manufacturing", path: "/partmanufacturing" },
-        { name: "Packaging", path: "/packaging" },
+        { name: "Part Manufacturing", path: "/services/partmanufacturing" },
+        { 
+          name: "Packaging", 
+          path: "/services/packaging",
+          subMenu: [
+            { name: "Food Packaging", path: "/services/packaging/food" },
+            { name: "Pharmaceutical Packaging", path: "/services/packaging/pharmaceutical" },
+            { name: "Palletization", path: "/services/packaging/palletization" },
+          ] 
+        },
       ]
     },
-    { 
-      name: "Capabilities", 
-      path: "/capabilities",
-      subMenu: [
-        { name: "Manufacturing", path: "/manufacturing" },
-        { name: "Building Automation", path: "/buildingautomation" },
-        { name: "SCADA", path: "/scada" },
-        { name: "System Integration", path: "/systemintegration" },
-        { name: "Calibration", path: "/calibration" },
-        { name: "Mechanical Design", path: "/mechdesign" },
-        { name: "Palletization", path: "/palletization" }
-      ]
-  },
     { name: "About", path: "/about" },
     { 
       name: "Support", 

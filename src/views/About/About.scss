@@ -69,4 +69,37 @@
             }
         }
     }
+
+    .about-automation-impact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .about-automation-impact-info-article {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            
+        }
+
+        .about-automation-impact-info-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40vw;
+            .haig {
+                width: 20vw;
+                height: auto;
+                margin: 3vh;
+            }
+            .haig-quote {
+                width: 20vw;
+            }
+            .award {
+                width: 25vw;
+                height: auto;
+                margin: 3vh;
+            }
+        }
+    }
 }

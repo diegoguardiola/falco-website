@@ -42,7 +42,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  height: 100px;
+  height: 120px;
 
   li {
     display: flex;
@@ -114,7 +114,7 @@
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.9s ease, opacity 0.9s ease;
+        transition: max-height 1.5s ease, opacity 1.5s ease;
         
         // Here, the position is NOT absolute, so it will push sibling elements.
         // Also, do not use top and left property for positioning here.

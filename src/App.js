@@ -25,16 +25,12 @@ import Industrial from './views/Services/Industrial/Industrial';
   import IndustrialCalibration from './views/Services/Industrial/Calibration/Calibration';
   import IndustrialDocumentation from './views/Services/Industrial/Documentation/Documentation';
 import PartManufacturing from './views/Services/PartManufacturing/PartManufacturing';
+import Packaging from './views/Services/Packaging/Packaging';
+  import PackagingFood from './views/Services/Packaging/Food/Food';
+  import PackagingPharma from './views/Services/Packaging/Pharmaceutical/Pharmaceutical';
+  import Palletizing from './views/Services/Packaging/Palletization/Palletization';
 
-import Packaging from './views/Industries/Packaging/Packaging';
 
-import Manufacturing from './views/Capabilities/Manufacturing/Manufacturing';
-import BuildingAutomation from './views/Capabilities/BuildingAutomation/BuildingAutomation';
-import SCADA from './views/Capabilities/SCADA/SCADA';
-import SystemIntegration from './views/Capabilities/SystemIntegration/SystemIntegration';
-import Calibration from './views/Capabilities/Calibration/Calibration';
-import MechDesign from './views/Capabilities/MechDesign/MechDesign';
-import Palletizing from './views/Capabilities/Palletizing/Palletizing';
 
 import RemoteSupport from './views/Support/RemoteSupport/RemoteSupport';
 import FieldServices from './views/Support/FieldServices/FieldServices';
@@ -57,12 +53,16 @@ function App() {
               <Route path="/services/pharmaceutical/bioreactors" element={<Bioreactors />} />
               <Route path="/services/pharmaceutical/validation" element={<PharmaValidation />} />
             <Route path="/services/industrial" element={<Industrial />} />
-              <Route path="services/industrial/startup" element={<StartUp />} />
-              <Route path="services/industrial/upgrades" element={<IndustrialUpgrades />} />
-              <Route path="services/industrial/fullautomation" element={<FullAutomation />} />
-              <Route path="services/industrial/calibration" element={<IndustrialCalibration />} />
-              <Route path="services/industrial/documentation" element={<IndustrialDocumentation />} />
-            <Route path="/partmanufacturing" element={<PartManufacturing />} />
+              <Route path="/services/industrial/startup" element={<StartUp />} />
+              <Route path="/services/industrial/upgrades" element={<IndustrialUpgrades />} />
+              <Route path="/services/industrial/fullautomation" element={<FullAutomation />} />
+              <Route path="/services/industrial/calibration" element={<IndustrialCalibration />} />
+              <Route path="/services/industrial/documentation" element={<IndustrialDocumentation />} />
+            <Route path="/services/partmanufacturing" element={<PartManufacturing />} />
+            <Route path="/services/packaging" element={<Packaging />} />
+              <Route path="/services/packaging/food" element={<PackagingFood />} />
+              <Route path="/services/packaging/pharmaceutical" element={<PackagingPharma />} />
+              <Route path="/services/packaging/palletization" element={<Palletizing />} />
 
           <Route path="/resources/casestudies" element={<CaseStudies />} />
           <Route path="/industries" element={<Industries />} />
@@ -71,18 +71,6 @@ function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
 
-          
-          
-          
-          <Route path="/packaging" element={<Packaging />} />
-          <Route path="/palletization" element={<Palletizing />} />
-
-          <Route path="/manufacturing" element={<Manufacturing />} />
-          <Route path="/buildingautomation" element={<BuildingAutomation />} />
-          <Route path="/scada" element={<SCADA />} />
-          <Route path="/systemintegration" element={<SystemIntegration />} />
-          <Route path="/calibration" element={<Calibration />} />
-          <Route path="/mechdesign" element={<MechDesign />} />
 
           <Route path="/remotesupport" element={<RemoteSupport />} />
           <Route path="/fieldservice" element={<FieldServices />} />

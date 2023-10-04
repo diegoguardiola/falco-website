@@ -34,22 +34,22 @@ function Overview() {
         </div>
         {/*Row 2*/}
         <div className='service_overview_card_row'>
-            <a href="/packaging" className='service_overview_card' style={{ backgroundImage: `url(${imgs[2]})` }}>
+            <a href="/services/packaging" className='service_overview_card' style={{ backgroundImage: `url(${imgs[2]})` }}>
                 <LuPackageOpen className='services_icon'/>
                 <h1>Packaging</h1>
             </a>
-            <a href="/partmanufacturing" className='service_overview_card' style={{ backgroundImage: `url(${imgs[3]})` }}>
+            <a href="/services/partmanufacturing" className='service_overview_card' style={{ backgroundImage: `url(${imgs[3]})` }}>
                 <PiGearBold className='services_icon' />
                 <h1>Part Manufacturing</h1>
             </a>
         </div>
         {/*Row 3*/}
         <div className='service_overview_card_row'>
-            <a href="/foodandbeverage" className='service_overview_card' style={{ backgroundImage: `url(${imgs[4]})` }}>
+            <a href="/services/foodandbeverage" className='service_overview_card' style={{ backgroundImage: `url(${imgs[4]})` }}>
                 <FiMonitor className='services_icon' />
                 <h1>Food and Beverage</h1>
             </a>
-            <a href="/industrialautomation" className='service_overview_card' style={{ backgroundImage: `url(${imgs[5]})` }}>
+            <a href="/services/industrial" className='service_overview_card' style={{ backgroundImage: `url(${imgs[5]})` }}>
                 <MdOutlinePrecisionManufacturing className='services_icon' />
                 <h1>Industrial Automation</h1>
             </a>

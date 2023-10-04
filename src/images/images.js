@@ -9,9 +9,11 @@ import industrialRobotics from './industrialRobotics.jpg'
 import machining1 from './metal-grinding.jpg'
 import section3image from './section3image.png'
 
-//main pages
-import aboutUsHeader from './about us.jpg'
-import aboutUsMap from './falco-map.png'
+//about us
+import aboutUsHeader1 from './About/sacramento.jpg'
+import aboutUsMap from './About/falco-map.png'
+import haig from './About/haig.png'
+import topRobotics from './About/topRobotics.png'
 
 //Affiliations
 import siemens from './affiliations/siemens.png'
@@ -50,6 +52,11 @@ import industrialFullAutomation1 from './services/Industrial/IndustrialFullAutom
 import industrialFullAutomation2 from './services/Industrial/IndustrialFullAutomation2.jpg'
 import industrialCalibration1 from './services/Industrial/IndustrialCalibration1.jpg'
 import industrialDocumentation1 from './services/Industrial/IndustrialDocumentation.jpg'
+    //packaging
+import packagingFoodBody1 from './services/Packaging/packagingFoodBody1.jpg'
+import packagingFoodBody2 from './services/Packaging/packagingFoodBody2.jpg'
+import packagingPharmaBody1 from './services/Packaging/packagingPharmaBody1.jpg'
+import PackagingPharmaBody2 from './services/Packaging/packagingPharmaBody2.jpg'
 
 //industries
 import foodandbev1 from './industries/food-processing-automation.jpg'
@@ -93,8 +100,7 @@ export default {
     machining1,
     section3image,
 
-    aboutUsHeader,
-    aboutUsMap,
+    
 
     siemens,
     AB,
@@ -135,6 +141,16 @@ export default {
         industrialFullAutomation2,
         industrialCalibration1,
         industrialDocumentation1,
+        //packaging
+        packagingFoodBody1,
+        packagingFoodBody2,
+        packagingPharmaBody1,
+        PackagingPharmaBody2,
+    //about Us
+    aboutUsHeader1,
+    aboutUsMap,
+    haig,
+    topRobotics,
 
     
     foodandbev1,

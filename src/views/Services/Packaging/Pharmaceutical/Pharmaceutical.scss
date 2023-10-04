@@ -1,0 +1,108 @@
+body {
+    overflow-x: hidden;
+  }
+
+.packaging-pharma-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    .packaging-pharma-header {
+        display: flex;
+        height: 70vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        position: relative; // Important: to make sure the pseudo-element is positioned correctly
+        background-image: url('../../../../images/services/Packaging/packagingPharmaHeader.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            //background-image: url('../../images/industries/hero-pharma_beverage_automation-1024x734.jpg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: -1; // To ensure the background is below the content
+        }
+
+        h1 {
+            color: white;
+            font-size: 4.5rem;
+        }
+    }
+
+    .packaging-pharma-body {
+        display: flex;
+        flex-direction: row;
+        width: 75vw;
+        
+
+        .packaging-pharma-info {
+            display: flex;
+            margin: 3rem 8rem;
+            flex-direction: column;
+            width: 65vw;
+            align-items: center;
+
+            .packaging-pharma-capabilities-links {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+
+                .packaging-pharma-capabilities-links-box {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20vw;
+                    height: 30vh;
+                    margin: 1vw;
+                    border: 2px solid black;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
+                    overflow: hidden;
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-decoration: none;
+                        color: black;
+                        padding: 5px;
+                    }
+                
+                    &:hover {
+                        transform: translate3d(0, 0, 10px); /* Apply a 3D translation on hover */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+                    }
+                }
+            }
+
+            img{
+                width: 60vw;
+                height: auto;
+                margin: 1.5rem 1.1rem;
+            }
+
+            h1, h2 {
+                color: #25289a;
+                margin-bottom: 1rem;
+            }
+
+            .packaging-pharma-info-bold {
+                font-weight: bold;
+            }
+
+        
+
+        }
+    }
+}

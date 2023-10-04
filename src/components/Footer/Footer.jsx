@@ -4,6 +4,9 @@ import {
     BsTwitter, BsLinkedin, BsFacebook, BsInstagram,
     BsFillTelephoneFill, BsEnvelopeFill, BsMapFill, 
 } from 'react-icons/bs'
+import {MdOutlineDesignServices} from 'react-icons/md'
+import {HiOutlineOfficeBuilding} from 'react-icons/hi'
+import { TbBuildingFactory2 } from 'react-icons/tb';
 import './Footer.scss'
 
 function Footer() {
@@ -33,12 +36,12 @@ function Footer() {
                 </div>
                 <div className='icon'> 
                     <a href="https://www.linkedin.com/company/falco-automation-llc/" target="_blank">
-                    <BsLinkedin className='icon'/>
+                     <BsLinkedin className='icon'/>
                     </a>
                 </div>
                 <div className='icon'>
                     <a href="" target="_blank">
-                    <BsFacebook className='icon'/>
+                        <BsFacebook className='icon'/>
                     </a>
                 </div>
                 <div className='icon'>
@@ -65,13 +68,22 @@ function Footer() {
         </div>
         <div className='row_4'>
             <p className='menu_item'>
-                <BsFillTelephoneFill /> +1 (916) 477-1742
+                <BsFillTelephoneFill /> +1 (650) 449-9011
             </p>
             <a href="mailto:sales@falcoautomation.com" className="menu-item">
                 <BsEnvelopeFill /> sales@falcoautomation.com
             </a>
             <p className='menu_item' onClick={openGoogleMapsDirections}>
-                <BsMapFill /> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
+                <TbBuildingFactory2 /><span className='menu_item-bold'> Manufacturing</span> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
+            </p>
+            <p className='menu_item' onClick={openGoogleMapsDirections}>
+                <TbBuildingFactory2 /><span className='menu_item-bold'> Manufacturing</span> Houston, TX
+            </p>
+            <p className='menu_item' onClick={openGoogleMapsDirections}>
+                <HiOutlineOfficeBuilding /><span className='menu_item-bold'> Headquarters</span> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
+            </p>
+            <p className='menu_item' onClick={openGoogleMapsDirections}>
+                <MdOutlineDesignServices /><span className='menu_item-bold'> Design Office</span> Italy
             </p>
         </div>
     </div>

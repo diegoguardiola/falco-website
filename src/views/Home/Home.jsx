@@ -29,12 +29,23 @@ function Home() {
             <div className='header_text'>
               <h1>Automation Soultions</h1>
               <h2>for your business' unique needs</h2>
+              <div className='youtube_video_container'>
+              <iframe 
+                width="750" 
+                height="400" 
+                src="https://www.youtube.com/embed/Pg60fB-flus" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+            </iframe>
+              </div>
             </div>
           </div>
           <CaroselAffiliations />
           <Section3 />
           <Carosel />
-          <Footer />
+          <Footer /> 
       
     </div>
   );

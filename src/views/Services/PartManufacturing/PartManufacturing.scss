@@ -14,7 +14,7 @@ body {
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../images/industries/partManufacturingHeader.jpg');
+        background-image: url('../../../images/services/PartManufacturing/PartmanufacturingHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -38,6 +38,7 @@ body {
 
         h1 {
             color: white;
+            font-size: 4.5rem;
         }
     }
 
