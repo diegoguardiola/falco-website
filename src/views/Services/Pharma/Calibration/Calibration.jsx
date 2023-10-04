@@ -1,5 +1,6 @@
 import React from 'react'
 import './Calibration.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,14 +12,14 @@ function CalibrationPharma() {
             <h1>Pharmaceutical Calibration</h1>
         </div>
         <div className='pharma-calibration-body'>
-        <div className="side-nav">
-            <ul>
-            <li><a href="/services/pharmaceutical">Back</a></li>
-                <li><a href="/services/pharmaceutical/calibration">Calibration</a></li>
-                <li><a href="/services/pharmaceutical/bioreactors">Bioreactors</a></li>
-                <li><a href="/services/pharmaceutical/validation">Validation</a></li>
-            </ul>
-        </div>
+            <div className="pharma-calibration-side-nav">
+                <ul>
+                <li><a href="/services/pharmaceutical">Back</a></li>
+                    <li><a href="/services/pharmaceutical/calibration">Calibration</a></li>
+                    <li><a href="/services/pharmaceutical/bioreactors">Bioreactors</a></li>
+                    <li><a href="/services/pharmaceutical/validation">Validation</a></li>
+                </ul>
+            </div>
             <div className='pharma-calibration-info'>
                 <h2>Our Calibration Services</h2>
                 <p>
@@ -28,7 +29,10 @@ function CalibrationPharma() {
                 that guarantee the accuracy of your critical equipment and instruments. With a focus on compliance, precision, and efficiency, we 
                 offer a range of calibration services tailored to pharmaceutical manufacturers, research laboratories, and healthcare institutions.
                 </p>
-                <img src={images.pharmaCalibration2}/>
+                <img 
+                    src={images.pharmaCalibration2}
+                    alt='measuring of powder on a precision scale'
+                />
                 <ul>
                     <li><span className='pharma-calibration-info-bold'>Instrument Calibration:</span>
                         We specialize in calibrating a wide array of pharmaceutical instruments, including but not limited to analytical balances, 
@@ -55,13 +59,16 @@ function CalibrationPharma() {
                         record-keeping system. Our services are aligned with cGMP, USP, and other pharmaceutical industry regulations.
                     </li>
                 </ul>
-                <img src={images.pharmaCalibration1}/>
+                <img 
+                    src={images.pharmaCalibration1}
+                    alt='a person picking up weighted standards for calibration'
+                />
                 <p>
                     In the pharmaceutical industry, precision and compliance are non-negotiable. Trust our Calibration Services for the Pharmaceutical 
                     Industry to keep your operations running smoothly, your products safe, and your reputation intact. Contact us today to discuss your 
                     calibration needs and schedule a consultation.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

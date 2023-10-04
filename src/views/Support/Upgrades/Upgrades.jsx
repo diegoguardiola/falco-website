@@ -1,6 +1,8 @@
 import React from 'react'
 import './Upgrades.scss'
 import SideNavbar from '../../../components/sideNavbarSupport/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -24,7 +26,10 @@ function Upgrades() {
                     human-machine interfaces and advanced programming, our upgrades will empower your operators to monitor 
                     and manage your machinery with ease, resulting in reduced downtime and increased productivity.
                 </p>
-                <img src={images.upgradeBody1}/>
+                <img 
+                    src={images.upgradeBody1}
+                    alt='close up of PLC controller'
+                />
                 <h2>Robotic System Upgrade:</h2>
                 <p>
                     Elevate your manufacturing operations with our robotic system upgrade solutions. We specialize in 
@@ -44,8 +49,10 @@ function Upgrades() {
                     Our end-to-end automation upgrades will significantly reduce operational costs, enhance product 
                     consistency, and position your facility for future growth in a rapidly evolving industry.
                 </p>
+                <ContactUs />
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

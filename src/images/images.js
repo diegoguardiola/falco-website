@@ -34,14 +34,16 @@ import scada from './overview/scada.jpg'
 import aerospaceOverview from './services/Aerospace/aerospaceOverview.jpg'
 import aerospaceOverview2 from './services/Aerospace/aerospaceOverview2.jpg'
     //pharma
-import foodAndBevPackaging1 from './services/FoodandBev/FoodandBevPackaging1.jpeg'
-import foodAndBevPackaging2 from './services/FoodandBev/FoodandBevPackaging2.jpg'
-import foodAndBevProcessing1 from './services/FoodandBev/FoodandBevProcessing1.jpg'
 import pharmaCalibration1 from './services/Pharma/PharmaCalibration1.jpg'
 import pharmaCalibration2 from './services/Pharma/PharmaCalibration2.jpg'
 import pharmaBioreactor1 from './services/Pharma/PharmaBioreactor1.jpg'
 import pharmaBioreactor2 from './services/Pharma/PharmaBioreactor2.jpg'
 import pharmaValidation1 from './services/Pharma/PharmaValidation1.jpeg'
+    //food and bev
+import foodAndBevPackaging1 from './services/FoodandBev/FoodandBevPackaging1.jpeg'
+import foodAndBevPackaging2 from './services/FoodandBev/FoodandBevPackaging2.jpg'
+import foodAndBevProcessing1 from './services/FoodandBev/FoodandBevProcessing1.jpg'
+import foodAndBevProcessingBody2 from './services/FoodandBev/FoodandBevProcessingBody2.jpeg'
     //industrial
 import industrialBody1 from './services/Industrial/IndustrialOverview1.jpg'
 import industrialBody2 from './services/Industrial/IndustrialOverview2.jpg'
@@ -65,6 +67,8 @@ import aerospaceBody from './industries/aerospace-body.jpg'
 import aerospaceBody2 from './industries/aerospace-body2.jpg'
 import pharmaBody from './industries/pharmaManufacturing.jpg'
 import pharmaBody2 from './industries/pharmaBody2.jpg'
+import palletizingHeader from './services/Packaging/palletizing-body.jpg'
+import palletizingBody from './services/Packaging/palletizing-body.jpg'
 
 
 import partManufacturingBody from './industries/part_manufacturing.jpg'
@@ -83,7 +87,7 @@ import calibrationBody from './capabilities/calibrationBody.jpg'
 import calibrationBody2 from './capabilities/calibrationBody2.jpg'
 import mechDesignBody from './capabilities/mechanical-design.jpg'
 import mechDesignBody2 from './capabilities/mechanicalBody2.jpg'
-import palletizingBody from './capabilities/palletizing-body.jpg'
+
 //support
 import remoteSupportBody from './support/remote-support.jpg'
 import fieldServicesBody1 from './support/field service engineers.webp'
@@ -125,6 +129,7 @@ export default {
         foodAndBevPackaging1,
         foodAndBevPackaging2,
         foodAndBevProcessing1,
+        foodAndBevProcessingBody2,
         //Pharma
         pharmaCalibration1,
         pharmaCalibration2,
@@ -146,6 +151,8 @@ export default {
         packagingFoodBody2,
         packagingPharmaBody1,
         PackagingPharmaBody2,
+        palletizingHeader,
+        palletizingBody,
     //about Us
     aboutUsHeader1,
     aboutUsMap,
@@ -176,7 +183,7 @@ export default {
     calibrationBody2,
     mechDesignBody,
     mechDesignBody2,
-    palletizingBody,
+    
 
     remoteSupportBody,
     fieldServicesBody1,

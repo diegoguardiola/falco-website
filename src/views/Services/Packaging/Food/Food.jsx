@@ -1,5 +1,6 @@
 import React from 'react'
 import './Food.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function PackagingFood() {
             <h1>Food Packaging</h1>
         </div>
         <div className='packaging-food-body'>
-        <div className="side-nav">
+        <div className="packaging-food-side-nav">
             <ul>
                 <li><a href="/services/packaging">Back</a></li>
                 <li><a href="/services/packaging/food">Food</a></li>
@@ -26,7 +27,10 @@ function PackagingFood() {
                     solutions are designed to meet the unique challenges of the food industry, ensuring your products reach consumers in pristine condition while 
                     maximizing productivity and minimizing waste.
                 </p>
-                <img src={images.packagingFoodBody1}/>
+                <img 
+                    src={images.packagingFoodBody1}
+                    alt='robotic arm organizing pastries'
+                />
                 <ul>
                     <li><span className='packaging-food-info-bold'>Customized Packaging Solutions:</span>
                         We offer tailored packaging solutions to accommodate the diverse needs of the food industry. Whether you're packaging fresh produce, frozen goods, dry snacks, or beverages, we have the expertise to create packaging systems that meet your specific requirements.
@@ -49,7 +53,10 @@ function PackagingFood() {
                         Real-time monitoring and control systems ensure that packaging processes run smoothly and provide insights for continuous improvement.
                     </li>
                 </ul>
-                <img src={images.packagingFoodBody2}/>
+                <img 
+                    src={images.packagingFoodBody2}
+                    alt='robot packaging canned food'
+                />
                 <h2>Why Choose Falco Automation for Food Packaging?</h2>
                 <ul>
                     <li><span className='packaging-food-info-bold'>Proven Expertise:</span>
@@ -73,7 +80,7 @@ function PackagingFood() {
                     Invest in the future of food packaging with [Your Company Name]. Contact us today to discuss your food packaging 
                     automation needs and explore how our solutions can transform your production process.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

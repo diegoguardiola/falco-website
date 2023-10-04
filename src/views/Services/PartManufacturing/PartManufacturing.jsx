@@ -1,5 +1,6 @@
 import React from 'react'
 import './PartManufacturing.scss'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
 import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
@@ -22,7 +23,10 @@ function PartManufacturing() {
                     industry needs. Our state-of-the-art facilities and cutting-edge technology ensure precision and efficiency 
                     in every component we produce. Our services include:
                 </p>
-                <img src={images.partManufacturingBody}/>
+                <img 
+                    src={images.partManufacturingBody}
+                    alt='close up shot of milling machine'
+                />
                 <h2>Our Capabilities</h2>
                 <h4>Multi-Axis CNC Milling</h4>
                 <p>
@@ -53,14 +57,17 @@ function PartManufacturing() {
                     From small components to large-scale production runs, we can meet your turning needs efficiently.
                 </p>
 
-                <img src={images.partManufacturingBody2}/>
+                <img 
+                    src={images.partManufacturingBody2}
+                    alt='close upshot of cnc machine'
+                />
                 <p>
                     At Falco Automation, our commitment to excellence in part manufacturing is unwavering. We take pride in our ability 
                     to deliver high-quality components that meet your specifications, no matter how intricate or demanding. Contact us 
                     today to discuss your project requirements and experience the unmatched expertise of our part manufacturing services. 
                     Your success is our priority.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

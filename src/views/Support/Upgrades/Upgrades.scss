@@ -9,11 +9,16 @@ body {
 
     .upgrades-header {
         display: flex;
-        height: 40vh;
+        height: 70vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
+        background-image: url('../../../images/support/remoteSupportHeader.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
 
         &::before {
             content: "";
@@ -32,6 +37,11 @@ body {
 
         h1 {
             color: white;
+            font-size: 4.5rem;
+            text-align: center;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -39,6 +49,10 @@ body {
         display: flex;
         flex-direction: row;
         width: 85vw;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
         
 
         .upgrades-info {
@@ -47,11 +61,20 @@ body {
             flex-direction: column;
 
             img{
-                width: 30;
+                width: 60vw;
                 height: auto;
-                margin: 0rem 1.1rem;
+                margin: 2rem 0rem;
             }
 
+            h1, h2 {
+                color: #25289a;
+                margin-bottom: 1rem;
+            }
+
+            .upgrades-info-bullet {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }

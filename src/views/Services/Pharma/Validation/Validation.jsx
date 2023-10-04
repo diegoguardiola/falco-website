@@ -1,5 +1,6 @@
 import React from 'react'
 import './Validation.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function PharmaValidation() {
             <h1>Validation</h1>
         </div>
         <div className='pharma-validation-body'>
-        <div className="side-nav">
+        <div className="pharma-validation-side-nav">
             <ul>
                 <li><a href="/services/pharmaceutical">Back</a></li>
                 <li><a href="/services/pharmaceutical/validation">Calibration</a></li>
@@ -50,7 +51,10 @@ function PharmaValidation() {
                         regulatory requirements and maintain product integrity.
                     </li>
                 </ul>
-                <img src={images.pharmaValidation1}/>
+                <img 
+                    src={images.pharmaValidation1}
+                    alt='validation technician performing tests on a system'
+                />
                 <h2>Why Choose Falco Automation's Validation Services:</h2>
                 <ul>
                     <li><span className='pharma-validation-info-bold'>Regulatory Compliance:</span>
@@ -69,7 +73,7 @@ function PharmaValidation() {
                 <p>
                     Our Validation Services to help you navigate the complex landscape of pharmaceutical regulations, ensuring that your products consistently meet quality standards and regulatory expectations, thus safeguarding patient health and your company's reputation.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Processing.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function ProcessingFB() {
             <h1>Food and Beverage Processing</h1>
         </div>
         <div className='food-and-bev-processing-body'>
-        <div className="side-nav">
+        <div className="food-and-bev-processing-side-nav">
             <ul>
                 <li><a href="/services/foodandbeverage">Back</a></li>
                 <li><a href="/services/foodandbeverage/packaging">Packaging</a></li>
@@ -25,7 +26,10 @@ function ProcessingFB() {
                     to enhance efficiency, precision, and productivity across various industries. Our processing capabilities encompass 
                     a wide range of advanced techniques and state-of-the-art equipment designed to meet the unique needs of our clients.
                 </p>
-                <img src={images.foodAndBevProcessing1}/>
+                <img 
+                    src={images.foodAndBevProcessing1}
+                    alt='robotic spider arm organizing food'
+                />
                 <ul>
                     <li><span className='food-and-bev-processing-info-bold'>Precision Robotics:</span>
                         Our robotic solutions are engineered for accuracy and repeatability. Whether it's material handling, assembly, or 
@@ -52,13 +56,16 @@ function ProcessingFB() {
                         a secure and compliant processing environment.
                     </li>
                 </ul>
-                
+                <img 
+                    src={images.foodAndBevProcessingBody2}
+                    alt='machine dispensing glaze on cookies'
+                />
                 <p>
                     At Falco Automation, we believe that automation is the key to staying competitive in today's rapidly evolving market. Our processing 
                     capabilities are designed to drive efficiency, reduce costs, and elevate the quality of your products. Contact us today to explore 
                     how our automation solutions can revolutionize your processing operations.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

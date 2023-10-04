@@ -14,11 +14,12 @@ body {
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../images/services/PartManufacturing/PartmanufacturingHeader.jpg');
+        background-image: url('../../../images/services/PartManufacturing/partManufacturingHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+        
 
 
         &::before {
@@ -28,7 +29,6 @@ body {
             right: 0;
             bottom: 0;
             left: 0;
-            //background-image: url('../../images/industries/hero-food_beverage_automation-1024x734.jpg.webp');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -39,6 +39,9 @@ body {
         h1 {
             color: white;
             font-size: 4.5rem;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -46,41 +49,39 @@ body {
         display: flex;
         flex-direction: row;
         width: 75vw;
-        
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
 
         .part-manufacturing-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
             width: 65vw;
-            align-items: center;
+            @media (max-width: 576px) {
+                align-items: center;
+              }
 
             img{
                 width: 60vw;
                 height: auto;
                 margin: 1.5rem 1.1rem;
+                align-self: center;
             }
 
             h1, h2 {
                 color: #25289a;
                 margin-bottom: 1rem;
+                align-self: center;
             }
 
             .part-manufacturing-info-bold {
                 font-weight: bold;
             }
-
-            a {
-                display: flex;
-                align-items: center;
-                background-color: #25289a;
-                width: 13vw;
-                height: 9vh;
-                text-decoration: none;
-                text-align: center;
-                font-weight: bold;
-                color: white;
-            }
         }
+
+
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Documentation.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function IndustrialDocumentation() {
             <h1>Documentation</h1>
         </div>
         <div className='industrial-documentation-body'>
-        <div className="side-nav">
+        <div className="industrial-documentation-side-nav">
             <ul>
                 <li><a href="/services/industrial">Back</a></li>
                 <li><a href="/services/industrial/startup">Start Up</a></li>
@@ -29,7 +30,10 @@ function IndustrialDocumentation() {
                     Manufacturing Documentation Services are tailored to meet the unique needs of your manufacturing 
                     facility, providing comprehensive solutions that drive productivity and ensure compliance.
                 </p>
-                <img src={images.industrialDocumentation1}/>
+                <img 
+                    src={images.industrialDocumentation1}
+                    alt='a stack of papers, glasses, and a laptop'
+                />
                 <h2>Our Documentation Capabilities</h2>
                 <ul>
                     <li><span className='industrial-documentation-info-bold'>Technical Writing:</span>
@@ -57,7 +61,7 @@ function IndustrialDocumentation() {
                     efficiently, and in full compliance with industry standards. Contact us today to discuss how we can tailor our services to 
                     meet your specific needs.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

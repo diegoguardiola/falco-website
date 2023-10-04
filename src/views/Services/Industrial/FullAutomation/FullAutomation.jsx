@@ -1,5 +1,6 @@
 import React from 'react'
 import './FullAutomation.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function FullAutomation() {
             <h1>Full Automation</h1>
         </div>
         <div className='industrial-full-automation-body'>
-        <div className="side-nav">
+        <div className="industrial-full-automation-side-nav">
             <ul>
                 <li><a href="/services/industrial">Back</a></li>
                 <li><a href="/services/industrial/startup">Start Up</a></li>
@@ -27,7 +28,10 @@ function FullAutomation() {
                     At Falco Automation, we provide comprehensive automation solutions tailored to the unique needs of the industrial manufacturing sector. Our end-to-end 
                     services encompass design, manufacturing, installation, and testing, ensuring seamless integration of automation systems into your manufacturing processes.
                 </p>
-                <img src={images.industrialFullAutomation1}/>
+                <img 
+                    src={images.industrialFullAutomation1}
+                    alt='robotic arms working on an assembly line for solar panels'
+                />
                 <h2>Design and Engineering</h2>
                 <p>
                     Our team of experienced engineers and designers collaborates closely with your organization to understand your specific manufacturing requirements. 
@@ -62,7 +66,10 @@ function FullAutomation() {
                         Our skilled programmers develop custom software and control logic to optimize system performance.
                     </li>
                 </ul>
-                <img src={images.industrialFullAutomation2}/>
+                <img 
+                    src={images.industrialFullAutomation2}
+                    alt='full automation line consisting of multiple robotic arms'
+                />
                 <h2>Installation</h2>
                 <p>
                     Our installation teams are well-equipped and experienced in deploying automation systems seamlessly within your manufacturing environment. Our installation services include:
@@ -104,7 +111,7 @@ function FullAutomation() {
                 At Falco Automation, we are committed to delivering turnkey automation solutions that drive efficiency, improve product quality, and enhance your competitive 
                 edge in the industrial manufacturing industry. Contact us today to discuss how our full automation services can transform your manufacturing processes.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

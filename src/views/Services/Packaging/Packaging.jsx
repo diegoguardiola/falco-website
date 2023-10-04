@@ -1,8 +1,12 @@
 import React from 'react'
 import './Packaging.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
+import {LiaPalletSolid} from 'react-icons/lia';
+import {CiPillsBottle1} from 'react-icons/ci';
+import {PiBeerBottle} from 'react-icons/pi';
 
 
 function Packaging() {
@@ -22,7 +26,10 @@ function Packaging() {
                     of your products. Our state-of-the-art automation solutions are designed to optimize your packaging processes, helping you achieve 
                     efficiency, consistency, and cost-effectiveness like never before.
                 </p>
-                <img src={images.packagingBody}/>
+                <img 
+                    src={images.packagingBody}
+                    alt='boxes on conveyors'
+                />
                 <h2>Key Services and Capabilities</h2>
                 <ul>
                     <li>
@@ -74,26 +81,39 @@ function Packaging() {
                     <div className='packaging-capabilities-links-box'>
                         <a href='/services/packaging/food'>
                             <h4>Food</h4>
+                            <div className='packaging-icon'>
+                                <PiBeerBottle />
+                            </div>
+                            
                         </a>
                     </div>
                     <div className='packaging-capabilities-links-box'>
                         <a href='/services/packaging/pharmaceutical'>
                             <h4>Pharmaceutical</h4>
+                            <div className='packaging-icon'>
+                                <CiPillsBottle1 />
+                            </div>
                         </a>
                     </div>
                     <div className='packaging-capabilities-links-box'>
                         <a href='/services/packaging/palletization'>
                             <h4>Palletization</h4>
+                            <div className='packaging-icon'>
+                                <LiaPalletSolid />
+                            </div>
                         </a>
                     </div>
                 </div>
-                <img src={images.packagingBody2}/>
+                <img 
+                    src={images.packagingBody2}
+                    alt='a robotic arm stacking boxes'
+                />
                 <p>
                     Overall, packaging automation offers industries a means to improve productivity, reduce costs, enhance product quality, 
                     and respond to market demands more efficiently. The specific services and capabilities associated with packaging automation 
                     can vary depending on the industry and the products being packaged.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

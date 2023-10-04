@@ -14,7 +14,7 @@ body {
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../../images/services/FoodandBev/FoodandBevProcessingHeader.jpg');
+        background-image: url('../../../../images/services/FoodandBev/FoodandBevPackagingHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -46,6 +46,46 @@ body {
         display: flex;
         flex-direction: row;
         width: 75vw;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .food-and-bev-processing-side-nav {
+            ul {
+                list-style-type: none;
+                padding: 0;
+            
+                li {
+                  padding: 15px 20px;
+                  border-bottom: 1px solid #444;
+                  position: relative;
+          
+                  a {
+                      color: black;
+                      text-decoration: none;
+                  }
+          
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #007bff;
+                    transition: width 0.3s;
+                  }
+          
+                  &:hover::after {
+                    width: 100%;
+                  }
+                }
+            }
+            @media (max-width: 576px) {
+                height: 30vh;
+            }
+        }
         
 
         .food-and-bev-processing-info {

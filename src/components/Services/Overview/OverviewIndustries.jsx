@@ -7,7 +7,7 @@ import {FiMonitor} from 'react-icons/fi'
 import {MdOutlinePrecisionManufacturing} from 'react-icons/md'
 
 import aerospace from '../../../images/capabilities/Aerospace-Engineering.jpg'
-import pharmaAutomation from '../../../images/industries/pharmaManufacturing.jpg'
+import pharmaAutomation from '../../../images/services/Pharma/pharmaHeader.jpg'
 import packaging from '../../../images/industries/packaging.jpg'
 import partManufacturing from '../../../images/capabilities/partManufacturing.jpg'
 import foodAndBev from '../../../images/capabilities/FoodandBev.jpg'
@@ -27,7 +27,7 @@ function Overview() {
                 <FaFighterJet className='services_icon'/>
                 <h1>Aerospace</h1>
             </a>
-            <a href="/pharmamanufacturing" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[1]})` }}>
+            <a href="/services/pharmaceutical" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[1]})` }}>
                 <GiMedicines className='services_icon'/>
                 <h1>Pharmaceutical Manufacturing</h1>
             </a>

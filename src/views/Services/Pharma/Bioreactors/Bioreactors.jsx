@@ -1,17 +1,18 @@
 import React from 'react'
 import './Bioreactors.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
 
 function Bioreactors() {
   return (
-    <div className='pharma-calibration-container'>
-        <div className='pharma-calibration-header'>
+    <div className='pharma-bioreactors-container'>
+        <div className='pharma-bioreactors-header'>
             <h1>Bioreactors</h1>
         </div>
-        <div className='pharma-calibration-body'>
-        <div className="side-nav">
+        <div className='pharma-bioreactors-body'>
+        <div className="pharma-bioreactors-side-nav">
             <ul>
                 <li><a href="/services/pharmaceutical">Back</a></li>
                 <li><a href="/services/pharmaceutical/calibration">Calibration</a></li>
@@ -19,14 +20,17 @@ function Bioreactors() {
                 <li><a href="/services/pharmaceutical/validation">Validation</a></li>
             </ul>
         </div>
-            <div className='pharma-calibration-info'>
+            <div className='pharma-bioreactors-info'>
                 <h2>Bioreactor Services & Solutions</h2>
                 <p>
                     At Falco Automation, we are committed to revolutionizing the pharmaceutical industry through our cutting-edge bioreactor services. Our advanced 
                     bioprocessing solutions are designed to meet the evolving needs of pharmaceutical companies, enabling them to accelerate drug development, improve 
                     production efficiency, and enhance product quality. Here's how our bioreactor services can benefit your pharmaceutical operations:
                 </p>
-                <img src={images.pharmaBioreactor1}/>
+                <img 
+                    src={images.pharmaBioreactor1}
+                    alt='line of bioreactors ascending in size from left to right'
+                />
                 <h3>Custom Bioreactor Solutions</h3>
                 <p>
                     Our company specializes in providing tailored bioreactor solutions for the pharmaceutical industry. We understand that each pharmaceutical 
@@ -49,13 +53,16 @@ function Bioreactors() {
                     improve control systems, or implement data analytics capabilities, our team will assess your existing bioreactors and recommend cost-effective upgrades to 
                     maximize productivity, reduce operational costs, and ensure compliance with current industry standards.
                 </p>
-                <img src={images.pharmaBioreactor2}/>
+                <img 
+                    src={images.pharmaBioreactor2}
+                    alt='operator working on a large bioreactor'
+                />
                 <p>
                     With our bioreactor services, we empower pharmaceutical companies to push the boundaries of drug development and production, ultimately improving patient 
                     outcomes. Partner with Falco Automation to unlock the full potential of bioprocessing in the pharmaceutical industry. Contact us today to learn more about 
                     how we can elevate your bioreactor operations.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

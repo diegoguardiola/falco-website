@@ -14,7 +14,7 @@ body {
         align-items: center;
         justify-content: center;
         position: relative; // Important: to make sure the pseudo-element is positioned correctly
-        background-image: url('../../../images/industries/pharmaHeader.jpg');
+        background-image: url('../../../images/services/Pharma/pharmaHeader.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -39,6 +39,10 @@ body {
         h1 {
             color: white;
             font-size: 4.5rem;
+            text-align: center;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            	}
         }
     }
 
@@ -46,6 +50,11 @@ body {
         display: flex;
         flex-direction: row;
         width: 75vw;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
         
 
         .pharma-info {
@@ -64,24 +73,54 @@ body {
                     display: flex;
                     flex-direction: column;
                     width: 20vw;
-                    height: 30vh;
+                    height: 25vh;
                     margin: 1vw;
+                    background-color: #888888;
                     border: 2px solid black;
                     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
                     overflow: hidden;
+                    
+                    @media (max-width: 576px) {
+                        height: 15vh;
+                        width: 25vw;
+                    }
 
                     a {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         text-decoration: none;
-                        color: black;
+                        color: white;
                         padding: 5px;
+                        @media (max-width: 576px) {
+                            font-size: .5rem;
+                        }
+                        
+                        h4 {
+                            @media (max-width: 576px) {
+                                font-size: .7rem;
+                              }
+                        }
+
+                        .pharma-icon{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            svg {
+                                height: 125px;
+                                width: 125px;
+                                color: white;
+                                @media (max-width: 576px) {
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                        }
                     }
                 
                     &:hover {
-                        transform: translate3d(0, 0, 10px); /* Apply a 3D translation on hover */
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+                        transform: translate3d(0, 0, 15px); /* Apply a 3D translation on hover */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a shadow on hover */
                     }
                 }
             }
@@ -100,6 +139,8 @@ body {
             .pharma-info-bold {
                 font-weight: bold;
             }
+
+        
 
         }
     }

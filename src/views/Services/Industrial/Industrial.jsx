@@ -1,15 +1,21 @@
 import React from 'react'
 import './Industrial.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
+import {MdUpgrade} from 'react-icons/md';
+import {HiOutlineClipboardDocumentList} from 'react-icons/hi2';
+import {MdOutlinePrecisionManufacturing} from 'react-icons/md';
+import {BsGraphUpArrow} from 'react-icons/bs';
+import { TbRulerMeasure } from 'react-icons/tb';
 
 
 function Industrial() {
   return (
     <div className='industrial-container'>
         <div className='industrial-header'>
-            <h1>Industrial Manufacturing</h1>
+            <h1>Industrial Automation</h1>
         </div>
         <div className='industrial-body'>
             <div className='industries-side-navbar'> 
@@ -42,16 +48,25 @@ function Industrial() {
                     <div className='industrial-capabilities-links-box'>
                         <a href='/services/industrial/startup'>
                             <h4>Start Up and Commissioning</h4>
+                            <div className='industrial-icon'>
+                                <BsGraphUpArrow />
+                            </div>
                         </a>
                     </div>
                     <div className='industrial-capabilities-links-box'>
                         <a href='/services/industrial/upgrades'>
                             <h4>Upgrades</h4>
+                            <div className='industrial-icon'>
+                                <MdUpgrade />
+                            </div>
                         </a>
                     </div>
                     <div className='industrial-capabilities-links-box'>
                         <a href='/services/industrial/fullautomation'>
                             <h4>Full Automation</h4>
+                            <div className='industrial-icon'>
+                                <MdOutlinePrecisionManufacturing />
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -59,11 +74,17 @@ function Industrial() {
                     <div className='industrial-capabilities-links-box'>
                         <a href='/services/industrial/calibration'>
                             <h4>Calibration</h4>
+                            <div className='industrial-icon'>
+                                <TbRulerMeasure />
+                            </div>
                         </a>
                     </div>
                     <div className='industrial-capabilities-links-box'>
                         <a href='/services/industrial/documentation'>
                             <h4>Documentation</h4>
+                            <div className='industrial-icon'>
+                                <HiOutlineClipboardDocumentList />
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -97,7 +118,7 @@ function Industrial() {
                     your industry. Let us help you unlock the full potential of your manufacturing processes and drive your success. Contact 
                     us today to discuss how we can transform your operations through precision automation.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

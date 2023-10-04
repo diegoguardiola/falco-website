@@ -1,6 +1,8 @@
 import React from 'react'
 import './FieldServices.scss'
 import SideNavbar from '../../../components/sideNavbarSupport/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -15,14 +17,17 @@ function FieldServices() {
                 <SideNavbar />
             </div>
             <div className='field-services-info'>
-                <img src={images.fieldServicesBody1}/>
-                <h2>Emergency Field Services</h2>
+            <h2>Emergency Field Services</h2>
                 <p>
                     Our automation company specializes in providing top-notch emergency field services to ensure the 
                     uninterrupted operation of your automated systems. When unexpected breakdowns or critical issues 
                     arise, our highly trained technicians are available 24/7 to respond swiftly to your call. Our 
                     emergency field services include:
                 </p>
+                <img 
+                    src={images.fieldServicesBody1}
+                    alt='engineers colaborating on site'
+                />
                 <ul>
                     <li>
                         Rapid Troubleshooting: Our skilled technicians are equipped with state-of-the-art diagnostic 
@@ -76,8 +81,10 @@ function FieldServices() {
                     the long run. Our goal is to help you achieve the highest level of reliability and efficiency for your 
                     automated processes.
                 </p>
+                <ContactUs />
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

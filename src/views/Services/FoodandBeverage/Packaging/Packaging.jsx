@@ -1,5 +1,6 @@
 import React from 'react'
 import './Packaging.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,13 +12,13 @@ function PackagingFB() {
             <h1>Food and Beverage Packaging</h1>
         </div>
         <div className='food-and-bev-packaging-body'>
-        <div className="side-nav">
-            <ul>
-                <li><a href="/services/foodandbeverage">Back</a></li>
-                <li><a href="/services/foodandbeverage/packaging">Packaging</a></li>
-                <li><a href="/services/foodandbeverage/processing">Processing</a></li>
-            </ul>
-        </div>
+            <div className="food-and-bev-packaging-side-nav">
+                <ul>
+                    <li><a href="/services/foodandbeverage">Back</a></li>
+                    <li><a href="/services/foodandbeverage/packaging">Packaging</a></li>
+                    <li><a href="/services/foodandbeverage/processing">Processing</a></li>
+                </ul>
+            </div>
             <div className='food-and-bev-packaging-info'>
                 <h2>Packaging Capabilities</h2>
                 <p>
@@ -26,7 +27,10 @@ function PackagingFB() {
                     critical component of product presentation, protection, and supply chain optimization. Here's how our packaging 
                     capabilities can transform your operations:
                 </p>
-                <img src={images.foodAndBevPackaging1}/>
+                <img 
+                    src={images.foodAndBevPackaging1}
+                    alt='automated food packaging line'
+                />
                 <h2>Importance of Packaging</h2>
                 <p>
                     Automation is paramount in the modern packaging landscape. It not only enhances speed and consistency but also 
@@ -62,13 +66,16 @@ function PackagingFB() {
                     keep your automation investment at the forefront of technology. Above all, our customer-centric focus is dedicated to 
                     building long-term partnerships and helping you achieve your packaging goals efficiently and cost-effectively.
                 </p>
-                <img src={images.foodAndBevPackaging2}/>
+                <img 
+                    src={images.foodAndBevPackaging2}
+                    alt='automated food separation line'
+                />
                 <p>
                     In today's competitive marketplace, efficient and precise packaging is a strategic advantage. With [Company Name]'s 
                     automation solutions, you can elevate your packaging processes, reduce costs, improve product quality, and stay ahead of 
                     the competition while receiving exceptional service and support every step of the way.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

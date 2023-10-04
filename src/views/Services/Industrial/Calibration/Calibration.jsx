@@ -1,5 +1,6 @@
 import React from 'react'
 import './Calibration.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function IndustrialCalibration() {
             <h1>Calibration</h1>
         </div>
         <div className='industrial-calibration-body'>
-        <div className="side-nav">
+        <div className="industrial-calibration-side-nav">
             <ul>
                 <li><a href="/services/industrial">Back</a></li>
                 <li><a href="/services/industrial/startup">Start Up</a></li>
@@ -32,7 +33,10 @@ function IndustrialCalibration() {
                     Our state-of-the-art facilities, expert technicians, and commitment to excellence make us your trusted partner 
                     in instrument calibration. Here's what you can expect from our calibration services:
                 </p>
-                <img src={images.industrialCalibration1}/>
+                <img 
+                    src={images.industrialCalibration1}
+                    alt='a calibration technician works on a control panel with'
+                />
                 <h2>Our Calibration Capabilities</h2>
                 <ul>
                     <li><span className='industrial-calibration-info-bold'>Instrument Calibration:</span>
@@ -60,7 +64,7 @@ function IndustrialCalibration() {
                 commitment to quality and expertise will support your manufacturing operations and help you maintain 
                 your competitive edge.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

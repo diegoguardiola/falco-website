@@ -1,5 +1,6 @@
 import React from 'react'
 import './StartUp.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -8,10 +9,10 @@ function StartUp() {
   return (
     <div className='industrial-startup-container'>
         <div className='industrial-startup-header'>
-            <h1>Start Up</h1>
+            <h1>Start Up & Comissioning</h1>
         </div>
         <div className='industrial-startup-body'>
-        <div className="side-nav">
+        <div className="industrial-startup-side-nav">
             <ul>
                 <li><a href="/services/industrial">Back</a></li>
                 <li><a href="/services/industrial/startup">Start Up</a></li>
@@ -29,7 +30,10 @@ function StartUp() {
                     success. Our team of experienced professionals is dedicated to ensuring a smooth and efficient transition from installation to full-scale 
                     production. Here's an overview of our services: 
                 </p>
-                <img src={images.industrialStartup1}/>
+                <img 
+                    src={images.industrialStartup1}
+                    alt='an engineer works on a full automated line'
+                />
                 <ol>
                     <li><span className='industrial-startup-info-bold'>Preparation and Planning:</span>
                         We begin by collaborating closely with your team to understand your project requirements, timelines, and objectives. Our experts work with you to develop a customized startup and commissioning plan that aligns with your production goals.
@@ -66,7 +70,7 @@ function StartUp() {
                     compliance with industry standards. Contact us today to discuss how we can support your startup and 
                     commissioning needs.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

@@ -6,6 +6,9 @@
     width: 35vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
     margin: 20px;
+    @media (max-width: 576px) {
+        width: 60vw;;
+    }
 
     &:hover {
         transform: translate3d(0, 0, 10px); /* Apply a 3D translation on hover */
@@ -21,6 +24,9 @@
       text-align: center;
       padding-right: 10px;
       text-decoration: underline blue;
+      @media (max-width: 576px) {
+        font-size: 1.0rem;
+    }
     }
   
 

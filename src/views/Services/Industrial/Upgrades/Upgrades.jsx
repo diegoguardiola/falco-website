@@ -1,5 +1,6 @@
 import React from 'react'
 import './Upgrades.scss'
+import ContactUs from '../../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../../components/Footer/Footer'
 import { images } from '../../../../images'
 
@@ -11,7 +12,7 @@ function IndustrialUpgrades() {
             <h1>Upgrades</h1>
         </div>
         <div className='industrial-upgrades-body'>
-        <div className="side-nav">
+        <div className="industrial-upgrades-side-nav">
             <ul>
                 <li><a href="/services/industrial">Back</a></li>
                 <li><a href="/services/industrial/startup">Start Up</a></li>
@@ -29,7 +30,10 @@ function IndustrialUpgrades() {
                     solutions tailored to your specific needs, aimed at enhancing productivity, reducing downtime, and optimizing your manufacturing processes. 
                     Here's an overview of our services: 
                 </p>
-                <img src={images.industrialUpgrades1}/>
+                <img 
+                    src={images.industrialUpgrades1}
+                    alt='a group of engineers work on a large panel'
+                />
                 <ul>
                     <li><span className='industrial-upgrades-info-bold'>Machinery Retrofitting:</span>
                         Our expert team specializes in retrofitting your existing machinery with the latest technologies and components. By upgrading your equipment, you can extend its lifespan, improve performance, and meet modern industry standards. This cost-effective solution reduces the need for new capital investments while ensuring your production lines operate at peak efficiency.
@@ -59,7 +63,7 @@ function IndustrialUpgrades() {
                     competitive in today's rapidly evolving market. Contact us today to discuss how our tailored solutions can transform 
                     your manufacturing operations.
                 </p>
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <ContactUs />
             </div>
         </div>
         <Footer />

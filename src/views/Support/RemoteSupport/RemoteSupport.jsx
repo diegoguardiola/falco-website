@@ -1,6 +1,8 @@
 import React from 'react'
 import './RemoteSupport.scss'
 import SideNavbar from '../../../components/sideNavbarSupport/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
+import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
 
 
@@ -15,7 +17,7 @@ function RemoteSupport() {
                 <SideNavbar />
             </div>
             <div className='remote-support-info'>
-                <img src={images.remoteSupportBody}/>
+                <h1>Remote Support Services</h1>
                 <p>
                     Falco Automation provides 24/7 remote technical support for your automation equipment whenever you
                     need it. Our technical support team can help resolve issues that arise with your automation 
@@ -27,6 +29,10 @@ function RemoteSupport() {
                     root cause of an issue and immediately determine the best solution to get your equipment running.
                     When you choose Falco Automation, we are here to support you from day one.
                 </p>
+                <img 
+                    src={images.remoteSupportBody}
+                    alt='support worker at workstation'
+                />
                 <h2>Falco Automation Real Time Service (FRS)</h2>
                 <p>
                     Take full advantage of Industry 4.0 technologies with Falco’s Real Time Service. As companies 
@@ -53,8 +59,10 @@ function RemoteSupport() {
                 </div>
                 <h2>Privcing Structure</h2>
                 <p>Falco Automation offers flexible options for pricing; from per task to time & materials (T&M).</p>
+                <ContactUs />
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

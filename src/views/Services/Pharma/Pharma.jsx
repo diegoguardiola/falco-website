@@ -1,8 +1,13 @@
 import React from 'react'
 import './Pharma.scss'
 import SideNavbar from '../../../components/sideNavbarIndustries/SideNavbar'
+import ContactUs from '../../../components/ContactUsButton/ContactUs'
 import Footer from '../../../components/Footer/Footer'
 import { images } from '../../../images'
+import { TbRulerMeasure } from 'react-icons/tb';
+import { GiChemicalTank } from 'react-icons/gi';
+import { HiOutlineClipboardDocumentCheck } from 'react-icons/hi2';
+
 
 
 function Pharma() {
@@ -22,8 +27,11 @@ function Pharma() {
                     industry. With a deep understanding of the stringent regulatory requirements, safety standards, and the ever-evolving landscape of pharmaceutical 
                     manufacturing, we offer a comprehensive suite of services to optimize your processes, enhance product quality, and ensure compliance.
                 </p>
-                <img src={images.pharmaBody}/>
-                <h4>Our Pharmaceutical Automation Capabilities Include:</h4>
+                <img 
+                    src={images.pharmaBody}
+                    alt='pahrma manufacturing workers in a clean room using equipment'
+                />
+                <h2>Our Pharmaceutical Automation Capabilities Include:</h2>
                 <ul>
                     <li>
                         <span className='pharma-info-bold'>Process Automation:</span> 
@@ -52,29 +60,43 @@ function Pharma() {
                         product quality. We help you maintain the highest standards in pharmaceutical production.
                     </li>
                 </ul>
-                <img src={images.pharmaBody2}/>
-                <h2>Our Capabilities</h2>
                 <div className='pharma-capabilities-links'>
                     <div className='pharma-capabilities-links-box'>
                         <a href='/services/pharmaceutical/calibration'>
                             <h4>Calibration</h4>
+                            <div className='pharma-icon'>
+                                <TbRulerMeasure />
+                            </div>
                         </a>
                     </div>
                     <div className='pharma-capabilities-links-box'>
                         <a href='/services/pharmaceutical/bioreactors'>
                             <h4>Bioreactors</h4>
+                            <div className='pharma-icon'>
+                                <GiChemicalTank />
+                            </div>
                         </a>
                     </div>
                     <div className='pharma-capabilities-links-box'>
                         <a href='/services/pharmaceutical/validation'>
                             <h4>Validation</h4>
+                            <div className='pharma-icon'>
+                                <HiOutlineClipboardDocumentCheck />
+                            </div>
                         </a>
                     </div>
                 </div>
-
-                <h2>Why Choose Falco Automation?</h2>
-                
-                <a href='/contact'>Contact Our Automation Experts</a>
+                <img 
+                    src={images.pharmaBody2}
+                    alt='an automated line for processing medicine'
+                />
+                <p>
+                    In a sector where precision, reliability, and compliance are non-negotiable, our pharmaceutical automation 
+                    services stand as a testament to innovation and excellence. Partner with us to drive efficiency, quality, 
+                    and competitiveness in your pharmaceutical manufacturing processes. Together, we'll shape the future of 
+                    pharmaceutical automation.
+                </p>
+                <ContactUs />
             </div>
         </div>
         <Footer />
