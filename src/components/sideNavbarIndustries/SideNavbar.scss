@@ -1,29 +1,43 @@
 .services-side-nav {
-    width: 15vw;
-    height: 100vh;
-    background-color: #ffffff;
-    @media (max-width: 576px) {
-      flex-direction: row;
-      align-items: center;
-      height: auto;
-    }
-    
-      
-    ul {
+  width: 15vw;
+  height: 100vh;
+  background-color: #ffffff;
+
+  @media (max-width: 576px) {
+      width: 90%;
+      height: 28vh;
+  }
+
+  ul {
       list-style-type: none;
       padding: 0;
-  
-      li {
-        padding: 15px 20px;
-        border-bottom: 1px solid #444;
-        position: relative;
+      display: flex;
+      flex-wrap: wrap;  // Allow the items to wrap
 
-        a {
-            color: black;
-            text-decoration: none;
-        }
+      @media (max-width: 576px) {
+          height: auto;
+          align-items: center;
+          justify-content: center;
+      }
+  }
 
-        &::after {
+  li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #444;
+      position: relative;
+
+      @media (max-width: 576px) {
+        display: flex;
+        padding: 30px 5px;
+        flex: 1 0 calc(50% - 10px);  // Take half of the width minus the padding
+      }
+
+      a {
+          color: black;
+          text-decoration: none;
+      }
+
+      &::after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -32,15 +46,10 @@
           height: 2px;
           background-color: #007bff;
           transition: width 0.3s;
-        }
-
-        &:hover::after {
-          width: 100%;
-        }
       }
-    }
+
+      &:hover::after {
+          width: 100%;
+      }
   }
-      
-
-
-  
+}

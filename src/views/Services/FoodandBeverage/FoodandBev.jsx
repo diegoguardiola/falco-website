@@ -15,9 +15,7 @@ function FoodandBev() {
             <h1>Food and Beverage</h1>
         </div>
         <div className='food-and-bev-body'>
-            <div className='industries-side-navbar'> 
-                <SideNavbar />
-            </div>
+            <SideNavbar />
             <div className='food-and-bev-info'>
                 <h1>How Falco Automation Serves Food and Beverage Industry</h1>
                 <p>

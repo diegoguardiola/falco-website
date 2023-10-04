@@ -74,7 +74,7 @@ function Footer() {
                 <BsEnvelopeFill /> sales@falcoautomation.com
             </a>
             <p className='menu_item' onClick={openGoogleMapsDirections}>
-                <TbBuildingFactory2 /><span className='menu_item-bold'> Manufacturing</span> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
+                <TbBuildingFactory2 /><span className='menu_item-bold'> Manufacturing</span> Sacramento, CA
             </p>
             <p className='menu_item' onClick={openGoogleMapsDirections}>
                 <TbBuildingFactory2 /><span className='menu_item-bold'> Manufacturing</span> Houston, TX
@@ -83,7 +83,7 @@ function Footer() {
                 <HiOutlineOfficeBuilding /><span className='menu_item-bold'> Headquarters</span> 2689 Citrus Rd Suite D, Rancho Cordova, CA 95742
             </p>
             <p className='menu_item' onClick={openGoogleMapsDirections}>
-                <MdOutlineDesignServices /><span className='menu_item-bold'> Design Office</span> Italy
+                <MdOutlineDesignServices /><span className='menu_item-bold'> Design Office</span> Turin, Italy
             </p>
         </div>
     </div>
