@@ -62,9 +62,9 @@ const Navbar = () => {
       name: "Support", 
       path: "/support",
       subMenu: [
-        { name: "Remote Technical Support", path: "/remotesupport" },
-        { name: "Field Services", path: "/fieldservice" },
-        { name: "System Upgrades", path: "/upgrades" },
+        { name: "Remote Technical Support", path: "/support/remotesupport" },
+        { name: "Field Services", path: "/support/fieldservice" },
+        { name: "System Upgrades", path: "/support/upgrades" },
       ]
     },
     { name: "Contact", path: "/contact" },

@@ -9,7 +9,7 @@ function Palletizing() {
   return (
     <div className='packaging-palletizing-container'>
         <div className='packaging-palletizing-header'>
-            <h1>Palletizationg</h1>
+            <h1>Palletization</h1>
         </div>
         <div className='packaging-palletizing-body'>
             <div className="packaging-palletizing-side-nav">

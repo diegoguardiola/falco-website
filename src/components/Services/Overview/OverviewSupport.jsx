@@ -1,4 +1,4 @@
-import './OverviewCapabilities.scss'
+import './OverviewSupport.scss'
 import {BiSupport} from 'react-icons/bi'
 import {BiWrench} from 'react-icons/bi'
 import {BiServer} from 'react-icons/bi'
@@ -18,18 +18,18 @@ function Overview() {
     <div className='service_overview_card_container'>
         {/*Row 1*/}
         <div className='service_overview_card_row'>  
-            <a href="/remotesupport" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[0]})` }}>
+            <a href="/support/remotesupport" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[0]})` }}>
                 <BiSupport className='services_icon'/>
                 <h1>Remote Technical Support</h1>
             </a>
-            <a href="/fieldservice" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[1]})` }}>
+            <a href="/support/fieldservice" className= 'service_overview_card' style={{ backgroundImage: `url(${imgs[1]})` }}>
                 <BiWrench className='services_icon'/>
                 <h1>Field Services</h1>
             </a>
         </div>
         {/*Row 2*/}
         <div className='service_overview_card_row'>
-            <a href="/systemupgrades" className='service_overview_card' style={{ backgroundImage: `url(${imgs[2]})` }}>
+            <a href="/support/systemupgrades" className='service_overview_card' style={{ backgroundImage: `url(${imgs[2]})` }}>
                 <BiServer className='services_icon'/>
                 <h1>System Upgrades</h1>
             </a>

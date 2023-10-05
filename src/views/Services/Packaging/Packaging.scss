@@ -19,6 +19,11 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+        @media (max-width: 576px) {
+            background-size: contain;
+            height: 40vh;
+            margin-top: 15vh;
+        }
 
 
         &::before {
@@ -54,6 +59,7 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
           }
         
 
@@ -63,6 +69,9 @@ body {
             flex-direction: column;
             width: 65vw;
             align-items: center;
+            @media (max-width: 576px) {
+                width: 85%;
+              }
 
             .packaging-capabilities-links {
                 display: flex;
@@ -72,7 +81,6 @@ body {
                 .packaging-capabilities-links-box {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     width: 20vw;
                     height: 25vh;
                     margin: 1vw;
@@ -82,7 +90,7 @@ body {
                     overflow: hidden;
                     
                     @media (max-width: 576px) {
-                        height: 15vh;
+                        height: 11vh;
                         width: 25vw;
                     }
 
@@ -93,14 +101,10 @@ body {
                         text-decoration: none;
                         color: white;
                         padding: 5px;
-                        @media (max-width: 576px) {
-                            font-size: .5rem;
-                        }
                         
                         h4 {
-                            text-align: center;
                             @media (max-width: 576px) {
-                                font-size: .7rem;
+                                font-size: .8rem;
                               }
                         }
 
@@ -113,8 +117,8 @@ body {
                                 width: 125px;
                                 color: white;
                                 @media (max-width: 576px) {
-                                    height: 50px;
-                                    width: 50px;
+                                    height: 45px;
+                                    width: 45px;
                                 }
                             }
                         }
@@ -131,6 +135,9 @@ body {
                 width: 60vw;
                 height: auto;
                 margin: 1.5rem 1.1rem;
+                @media (max-width: 576px) {
+                    width: 90%;
+                  }
             }
 
             h1, h2 {
@@ -138,7 +145,7 @@ body {
                 margin-bottom: 1rem;
             }
 
-            .pharma-info-bold {
+            .packaging-info-bold {
                 font-weight: bold;
             }
 

@@ -20,6 +20,9 @@
         align-items: center;
         justify-content: center;
         margin-top: 20vh;
+        @media (max-width: 576px) {
+            flex-direction: row;
+        }
     }
 
     .about-overview {
@@ -28,12 +31,20 @@
         flex-direction: row;
         justify-content: center;
         width: 85vw;
+        @media (max-width: 576px) {
+            width: 95vw;
+            flex-direction: column;
+        }
 
         .about-overview-text {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
             width: 45vw;
+            @media (max-width: 576px) {
+                width: 100%;
+                align-items: center;
+            }
 
             
                 
@@ -49,6 +60,10 @@
                 font-weight: bold;
                 color: white;
                 margin: 5px;
+                @media (max-width: 576px) {
+                    width: 40vw;
+                    flex-direction: column;
+                }
             }
             
             .about-menu li a {
@@ -66,39 +81,68 @@
             .about-map-img {
                 width: 55vw;
                 height: auto;
+                @media (max-width: 576px) {
+                    display: none;
+                    
+                }
             }
         }
     }
-
-    .about-automation-impact-info {
+    
+    .about-automation-impact{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column; 
         
-        .about-automation-impact-info-article {
+        .about-automation-impact-info {
             display: flex;
-            flex-direction: column;
-            width: 50vw;
-            
-        }
-
-        .about-automation-impact-info-images {
-            display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            width: 40vw;
-            .haig {
-                width: 20vw;
-                height: auto;
-                margin: 3vh;
+            @media (max-width: 576px) {
+                flex-direction: column; 
             }
-            .haig-quote {
-                width: 20vw;
+            
+            
+            .about-automation-impact-info-article {
+                display: flex;
+                flex-direction: column;
+                width: 50vw;
+                @media (max-width: 576px) {
+                    width: 95%;
+                }
+                
             }
-            .award {
-                width: 25vw;
-                height: auto;
-                margin: 3vh;
+
+            .about-automation-impact-info-images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 40vw;
+                @media (max-width: 576px) {
+                    width: 80%;
+                }
+                
+                .haig {
+                    width: 20vw;
+                    height: auto;
+                    margin: 3vh;
+                    @media (max-width: 576px) {
+                        width: 50vw;
+                    }
+                }
+                .haig-quote {
+                    width: 20vw;
+                    @media (max-width: 576px) {
+                        width: 60vw;
+                    }
+                }
+                .award {
+                    width: 25vw;
+                    height: auto;
+                    margin: 3vh;
+                    @media (max-width: 576px) {
+                        width: 65vw;
+                    }
+                }
             }
         }
     }

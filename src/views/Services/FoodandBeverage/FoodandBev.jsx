@@ -71,7 +71,7 @@ function FoodandBev() {
                         </a>
                     </div>
                     <div className='food-and-bev-capabilities-links-box'>
-                        <a href='/services/foodandbeverage/machining/processing'>
+                        <a href='/services/foodandbeverage/processing'>
                             <h4>Processing</h4>
                             <div className='food-and-bev-icon'>
                                 <FaArrowsRotate />

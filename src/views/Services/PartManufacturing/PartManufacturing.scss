@@ -19,7 +19,11 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
-        
+        @media (max-width: 576px) {
+            background-size: contain;
+            height: 40vh;
+            margin-top: 15vh;
+        }
 
 
         &::before {
@@ -29,6 +33,7 @@ body {
             right: 0;
             bottom: 0;
             left: 0;
+            //background-image: url('../../images/industries/hero-food_beverage_automation-1024x734.jpg.webp');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -39,9 +44,10 @@ body {
         h1 {
             color: white;
             font-size: 4.5rem;
+            text-align: center;
             @media (max-width: 576px) {
                 font-size: 3rem;
-            }
+            	}
         }
     }
 
@@ -53,35 +59,98 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
           }
+        
 
         .part-manufacturing-info {
             display: flex;
             margin: 3rem 8rem;
             flex-direction: column;
             width: 65vw;
+            align-items: center;
             @media (max-width: 576px) {
-                align-items: center;
+                width: 85%;
               }
+
+            .part-manufacturing-capabilities-links {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+
+                .part-manufacturing-capabilities-links-box {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20vw;
+                    height: 25vh;
+                    margin: 1vw;
+                    background-color: #888888;
+                    border: 2px solid black;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition properties */
+                    overflow: hidden;
+                    
+                    @media (max-width: 576px) {
+                        height: 11vh;
+                        width: 25vw;
+                    }
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        padding: 5px;
+                        
+                        h4 {
+                            @media (max-width: 576px) {
+                                font-size: .8rem;
+                              }
+                        }
+
+                        .part-manufacturing-icon{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            svg {
+                                height: 125px;
+                                width: 125px;
+                                color: white;
+                                @media (max-width: 576px) {
+                                    height: 45px;
+                                    width: 45px;
+                                }
+                            }
+                        }
+                    }
+                
+                    &:hover {
+                        transform: translate3d(0, 0, 15px); /* Apply a 3D translation on hover */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a shadow on hover */
+                    }
+                }
+            }
 
             img{
                 width: 60vw;
                 height: auto;
                 margin: 1.5rem 1.1rem;
-                align-self: center;
+                @media (max-width: 576px) {
+                    width: 90%;
+                  }
             }
 
             h1, h2 {
                 color: #25289a;
                 margin-bottom: 1rem;
-                align-self: center;
             }
 
             .part-manufacturing-info-bold {
                 font-weight: bold;
             }
+
+        
+
         }
-
-
     }
 }

@@ -43,9 +43,9 @@ function App() {
           <Route path="/falco-website" element={<Home />} />
           <Route path="/services" element={<Services />} />
             <Route path="/services/aerospace" element={<Aerospace />} />
-            <Route path="services/foodandbeverage" element={<FoodandBev />} />
-             <Route path="services/foodandbeverage/packaging" element={<PackagingFB />} />
-             <Route path="services/foodandbeverage/processing" element={<ProcessingFB />} />
+            <Route path="/services/foodandbeverage" element={<FoodandBev />} />
+             <Route path="/services/foodandbeverage/packaging" element={<PackagingFB />} />
+             <Route path="/services/foodandbeverage/processing" element={<ProcessingFB />} />
             <Route path="/services/pharmaceutical" element={<Pharma />} />
               <Route path="/services/pharmaceutical/calibration" element={<CalibrationPharma />} />
               <Route path="/services/pharmaceutical/bioreactors" element={<Bioreactors />} />
@@ -63,9 +63,9 @@ function App() {
               <Route path="/services/packaging/palletization" element={<Palletizing />} />
           <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
-            <Route path="/remotesupport" element={<RemoteSupport />} />
-            <Route path="/fieldservice" element={<FieldServices />} />
-            <Route path="/upgrades" element={<Upgrades />} />
+            <Route path="/support/remotesupport" element={<RemoteSupport />} />
+            <Route path="/support/fieldservice" element={<FieldServices />} />
+            <Route path="/support/upgrades" element={<Upgrades />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

@@ -1,4 +1,4 @@
-import './OverviewIndustries.scss'
+import './OverviewServices.scss'
 import {FaFighterJet} from 'react-icons/fa'
 import {GiMedicines} from 'react-icons/gi'
 import {LuPackageOpen} from 'react-icons/lu'

@@ -10,7 +10,7 @@ function About() {
             <h1>About Falco Automation</h1>
         </div>
         <div className='about-header-image'>
-            <img src={images.aboutUsHeader}/>
+            <img src={images.aboutUsHeader1}/>
         </div>
         <div className='about-overview'>
             <div className='about-overview-text'>

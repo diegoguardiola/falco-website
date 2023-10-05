@@ -39,6 +39,10 @@ body {
         h1 {
             color: white;
             font-size: 4.5rem;
+            text-align: center;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -49,17 +53,32 @@ body {
         @media (max-width: 576px) {
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
 
         .food-and-bev-packaging-side-nav {
+            @media (max-width: 576px) {
+                width: 90%;
+                height: 9vh;
+            }
             ul {
                 list-style-type: none;
                 padding: 0;
+                @media (max-width: 576px) {
+                    height: auto;
+                    align-items: center;
+                    justify-content: center;
+                }
             
                 li {
                   padding: 15px 20px;
                   border-bottom: 1px solid #444;
                   position: relative;
+                  @media (max-width: 576px) {
+                    display: flex;
+                    padding: 30px 5px;
+                    flex: 1 0 calc(50% - 10px);  // Take half of the width minus the padding
+                  }
           
                   a {
                       color: black;
@@ -94,6 +113,9 @@ body {
             flex-direction: column;
             width: 65vw;
             align-items: center;
+            @media (max-width: 576px) {
+                width: 90%;
+            }
 
             .food-and-bev-packaging-capabilities-links {
                 display: flex;
@@ -130,6 +152,9 @@ body {
                 width: 60vw;
                 height: auto;
                 margin: 1.5rem 1.1rem;
+                @media (max-width: 576px) {
+                    width: 90%;
+                }
             }
 
             h1, h2 {
